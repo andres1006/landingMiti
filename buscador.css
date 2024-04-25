@@ -3,13 +3,13 @@
     background-color: transparent;
     display: flex;
     height:  48px;
-    width: 165vh;
+    width: 96vh;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    margin: 1px;
-    padding: 1px; 
-    border: 1px solid #5fb7fa; 
+    margin: 20px;
+    padding: 0px; 
+    border: 2px solid #9FDDF5; 
     
 }
 
@@ -19,13 +19,15 @@
     margin: 8px;
     height: 22px;
     width: 126px;
-    margin-right: -9px;
-    background-color: lightgray;
+    margin-right: -7px;
+    background-color: #F2F2F2;
     justify-content: center;
     text-align: center;
     border: transparent; 
-    border-radius: 10px;
+    border-radius: 3px;
     font-family: Unisketch Light;
+    margin-left: -3px;
+    
 }
 
 #search{
@@ -33,12 +35,12 @@
     display: flex;
     margin: 8px;
     height: 40px;
-    width: 110px;
+    width: 103px;
     margin-right: 2px;
-    background-color: lightblue;
+    background-color: #31AFF5;
     justify-content: center;
     text-align: center;
     border: transparent; 
-    border-radius: 10px;
+    border-radius: 3px;
     font-family: Unisketch Light;
 }
