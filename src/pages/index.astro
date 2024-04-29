@@ -61,6 +61,14 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
+<div id="suscribe">
+	<div class="text">
+		Let’s go. Get a link 
+to download the app.
+	</div>
+	<input type="text" placeholder="Enter your phone number">
+	<button>GET THE LINK</button>
+</div>
 </Layout>
 
 <style>
@@ -119,5 +127,28 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+	#suscribe{
+		background-color: #261FFF;
+		max-height: 165px;
+		padding: 49px 88px 49px 88px;
+		border-radius: 10px;
+		color: #FFFFFF;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 72px;
+		justify-content: center;
+
+		input{
+			max-height: 67px;
+			padding: 0px 35px;
+		}
+
+		button{
+			height: 66px;
+			border-radius: 4.39px;
+			background-color: #EBEAFF;
+			color: #261FFF;
+		}
 	}
 </style>
