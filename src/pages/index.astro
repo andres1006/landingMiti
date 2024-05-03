@@ -8,6 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>  
+
+	<header>
+		<div>
+			<img src="/public/img/Ellipse-1.svg" class="logo">
+		</div>
+		<nav class="menu">
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="menu-button">
+			<span class="menu-icon"></span>
+			</label>
+			<ul class="menu-items">
+				<li><a href="#">Item 1</a></li>
+				<li><a href="#">Item 2</a></li>
+				<li><a href="#">Item 3</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="text">
+		<img src="/public/img/vamosMiti.svg" class="logoText">
+		<h2 class="title">Bus or carpool? <br>
+			Your pick of rides at low prices.</h2>
+		<h2 class="subtitle">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit. </h2>
+		
+	</div>
+
+
     <div class = "container">
             <input class="input" type="text" placeholder="Leaving from">
 			
@@ -91,4 +118,96 @@
     font-family: Unisketch Light;
 }	
 
+
+	body{
+	    background-color: #fff;
+	}
+
+	header {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    height: 60px;
+	    padding: 0 20px;
+	    background-color: #ffffff;
+	    color: #000;
+	}
+
+	.logo {
+	    width: 50px;
+	}
+
+	.menu {
+	    position: relative;
+	}
+
+	.menu-toggle {
+	    display: none;
+	}
+
+	.menu-button {
+	    display: flex;
+	    align-items: center;
+	    cursor: pointer;
+	}
+
+	.menu-icon {
+	    width: 24px;
+	    height: 18px;
+	    background: url('/public/img/menu-1.svg') no-repeat center ;
+	    background-size: contain;
+	}
+
+	.menu-items {
+	    position: absolute;
+	    top: 50px;
+	    left: -60px;
+	    height: 0;
+	    overflow: hidden;
+	    transition: height 0.3s ease-out;
+	    background-color: #ffffff;
+	    list-style: none;
+	    padding: 0px;
+	    margin: 0;
+	}
+
+	.menu-items li {
+	    padding: 10px 20px;
+	}
+
+	.menu-items li a {
+	    color: #000000;
+	    text-decoration: none;
+	}
+
+	.menu-toggle:checked ~ .menu-items {
+	    height: 120px;
+	}
+
+	.text {
+	    background-color: #261fff;
+	    color: #ffffff;
+	    text-align: left;
+	    font-family: "Manrope", sans-serif;
+	    padding: 80px;
+	}
+
+	.title {
+	    font-size: 32px;
+	    font-weight: 600px;
+	    margin: 0;
+	    padding: 30px 0px 0px 80px;
+	}
+
+	.subtitle {
+	    font-size: 20px;
+	    font-weight: 500px;
+	    margin: 0;
+	    padding: 20px 0px 10px 80px;
+	}
+
+	.logoText {
+	    float: right;
+	    margin: -30px 50px 0px 0px;
+	}
 </style>
