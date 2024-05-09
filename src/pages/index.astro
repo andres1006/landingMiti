@@ -31,7 +31,9 @@
 		<h2 class="title1">Bus or carpool? <br>
 			Your pick of rides at low prices.</h2>
 		<h2 class="subtitle">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit. </h2>
-		
+		<span class="circle"></span>
+		<span class="rectangle1"></span>
+		<span class="rectangle2"></span>
 	</div>
 
 
@@ -236,11 +238,13 @@
 	}
 
 	.text {
+		position: relative;
 	    background-color: #261fff;
 	    color: #ffffff;
 	    text-align: left;
 	    font-family: "Manrope", sans-serif;
 	    padding: 80px;
+		overflow: hidden;
 	}
 
 	.title1 {
@@ -259,8 +263,43 @@
 
 	.logoText {
 	    float: right;
-	    margin: -30px 50px 0px 0px;
+	    margin: -30px 190px 0px 0px;
 	}
+
+	.circle {
+    position: absolute;
+    bottom: -20px;
+    left: -65px;
+    background-color: #f6d5da;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rectangle1 {
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    transform: translateX(-50%);
+    height: 340px;
+	width: 80px;
+    border: 70px solid transparent;
+    border-color: #5751ff;
+    border-radius: 120px;
+}
+
+.rectangle2 {
+    position: absolute;
+    top: 50%;
+    right: -19%; 
+    transform: translateY(-50%);
+	height: 80px;
+	width: 340px;
+	border: 70px solid transparent;
+    border-color: #5751ff;
+    border-radius: 120px;
+}
+
 
 .title2 {
 	text-align: center;
