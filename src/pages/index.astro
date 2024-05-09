@@ -1,288 +1,327 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./buscador.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./buscador.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-</head>
-<body>  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="/public/img/Ellipse-1.svg" class="logo" />
+      </div>
+      <nav class="menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-button">
+          <span class="menu-icon"></span>
+        </label>
+        <ul class="menu-items">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </nav>
+    </header>
 
-	<header>
-		<div>
-			<img src="/public/img/Ellipse-1.svg" class="logo">
-		</div>
-		<nav class="menu">
-			<input type="checkbox" id="menu-toggle" class="menu-toggle">
-			<label for="menu-toggle" class="menu-button">
-			<span class="menu-icon"></span>
-			</label>
-			<ul class="menu-items">
-				<li><a href="#">Item 1</a></li>
-				<li><a href="#">Item 2</a></li>
-				<li><a href="#">Item 3</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<div class="text">
-		<img src="/public/img/vamosMiti.svg" class="logoText">
-		<h2 class="title1">Bus or carpool? <br>
-			Your pick of rides at low prices.</h2>
-		<h2 class="subtitle">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit. </h2>
-		
-	</div>
-
-
-    <div class = "container">
-            <input class="input" type="text" placeholder="Leaving from">
-			
-		
-        <input class="input" type="text" placeholder="Going to">
-		<div class="input-container">
-            <input class="input" type="text" placeholder="Select the date">
-            <i class="fa-regular fa-calendar fa-2xs"></i>
-        </div>
-        <input class="input" type="number" placeholder="No. of travelers">
-        <button id = "search">Search</button>
+    <div class="text">
+      <div class="circle"></div>
+      <div class="road"></div>
+      <img src="/public/img/vamosMiti.svg" class="logoText" />
+      <h2 class="title1">
+        Bus or carpool? <br />
+        Your pick of rides at low prices.
+      </h2>
+      <h2 class="subtitle">
+        Amet minim mollit non deserunt ullamco est sit<br /> aliqua dolor do amet
+        sint. Velit officia consequat<br /> duis enim velit mollit.
+      </h2>
     </div>
-    
 
-	<div class="title2">
-		<h1>How does it work?</h1>
-		<h2>Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br>amet sint. Velit officia consequat duis enim velit mollit. </h2>
-	</div>
+    <div class="container">
+      <input class="input" type="text" placeholder="Leaving from" />
 
-	<div class="cards">
-		<img class="bg1" src="/public/img/bg1.svg" >
-		<img class="bg2" src="/public/img/bg2.svg" >
+      <input class="input" type="text" placeholder="Going to" />
+      <div class="input-container">
+        <input class="input" type="text" placeholder="Select the date" />
+        <i class="fa-regular fa-calendar fa-2xs"></i>
+      </div>
+      <input class="input" type="number" placeholder="No. of travelers" />
+      <button id="search">Search</button>
+    </div>
 
-		<div class="card card1">
-			<img src="/public/img/num1.png" alt="Icono" class="icon">
-			<div class="content">
-				<h3 class="title">Fill your details</h3>
-				<p class="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-			</div>
-		</div>
+    <div class="title2">
+      <h1>How does it work?</h1>
+      <h2>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br
+        />amet sint. Velit officia consequat duis enim velit mollit.
+      </h2>
+    </div>
 
-		<div class="card card2">
-			<img src="/public/img/num2.png" alt="Icono" class="icon">
-			<div class="content">
-				<h3 class="title">Search for the perfect rides</h3>
-				<p class="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-			</div>
-		</div>
+    <div class="cards">
+      <img class="bg1" src="/public/img/bg1.svg" />
+      <img class="bg2" src="/public/img/bg2.svg" />
 
-		<div class="card card3">
-			<img src="/public/img/num3.png" alt="Icono" class="icon">
-			<div class="content">
-				<h3 class="title">Select the route </h3>
-				<p class="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-			</div>
-		</div>
+      <div class="card card1">
+        <img src="/public/img/num1.png" alt="Icono" class="icon" />
+        <div class="content">
+          <h3 class="title">Fill your details</h3>
+          <p class="subtitle">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </div>
 
-		<div class="card card4">
-			<img src="/public/img/num4.png" alt="Icono" class="icon">
-			<div class="content">
-				<h3 class="title">Talk to the driver</h3>
-				<p class="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-			</div>
-		</div>
+      <div class="card card2">
+        <img src="/public/img/num2.png" alt="Icono" class="icon" />
+        <div class="content">
+          <h3 class="title">Search for the perfect rides</h3>
+          <p class="subtitle">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </div>
 
-		<div class="card card5">
-			<img src="/public/img/num5.png" alt="Icono" class="icon">
-			<div class="content">
-				<h3 class="title">Confirm your seat</h3>
-				<p class="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-			</div>
-		</div>
-	</div>
+      <div class="card card3">
+        <img src="/public/img/num3.png" alt="Icono" class="icon" />
+        <div class="content">
+          <h3 class="title">Select the route</h3>
+          <p class="subtitle">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </div>
 
-</body>
+      <div class="card card4">
+        <img src="/public/img/num4.png" alt="Icono" class="icon" />
+        <div class="content">
+          <h3 class="title">Talk to the driver</h3>
+          <p class="subtitle">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </div>
+
+      <div class="card card5">
+        <img src="/public/img/num5.png" alt="Icono" class="icon" />
+        <div class="content">
+          <h3 class="title">Confirm your seat</h3>
+          <p class="subtitle">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 <style>
+  .circle {
+    width: 150px;
+    height: 150px;
+    bottom: -40px;
+    left: -100px;
+    position: absolute;
+    background-color: pink;
+    border-radius: 50%;
+  }
 
-.container {
+  .road {
+    width: 100px;
+    height: 400px;
+    position: absolute;
+    border: 40px solid red;
+  }
+
+  .container {
     background-color: transparent;
     display: flex;
-    height:  48px;
+    height: 48px;
     width: 96vh;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     margin: 20px;
-    padding: 0px; 
-    border: 2px solid #9FDDF5; 
-    
-}
-.input-container {
+    padding: 0px;
+    border: 2px solid #9fddf5;
+  }
+  .input-container {
     position: relative;
-	color: #dbdbdb; 
-}
+    color: #dbdbdb;
+  }
 
-.fa-circle{
-	position: relative;
-	color: #dbdbdb; 
-	left: -90px;
-}
-.fa-calendar {
+  .fa-circle {
+    position: relative;
+    color: #dbdbdb;
+    left: -90px;
+  }
+  .fa-calendar {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-	font-size: 1em;
+    font-size: 1em;
     left: -90px;
+  }
 
-}
-
-.input {
+  .input {
     padding: 10px 8px;
-	padding-right: 12px;
+    padding-right: 12px;
     display: flex;
     margin: 8px;
     height: 22px;
     width: 126px;
     margin-right: -7px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     justify-content: center;
     text-align: center;
-    border: transparent; 
+    border: transparent;
     border-radius: 3px;
     font-family: Unisketch Light;
     margin-left: -3px;
-    
-}
+  }
 
-#search{
+  #search {
     padding: 10px 8px;
     display: flex;
     margin: 8px;
     height: 40px;
     width: 103px;
     margin-right: 2px;
-    background-color: #31AFF5;
+    background-color: #31aff5;
     justify-content: center;
     text-align: center;
-    border: transparent; 
+    border: transparent;
     border-radius: 3px;
     font-family: Unisketch Light;
-}	
+  }
 
+  body {
+    background-color: #fff;
+  }
 
-	body{
-	    background-color: #fff;
-	}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #000;
+  }
 
-	header {
-	    display: flex;
-	    justify-content: space-between;
-	    align-items: center;
-	    height: 60px;
-	    padding: 0 20px;
-	    background-color: #ffffff;
-	    color: #000;
-	}
+  .logo {
+    width: 50px;
+  }
 
-	.logo {
-	    width: 50px;
-	}
+  .menu {
+    position: relative;
+  }
 
-	.menu {
-	    position: relative;
-	}
+  .menu-toggle {
+    display: none;
+  }
 
-	.menu-toggle {
-	    display: none;
-	}
+  .menu-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 
-	.menu-button {
-	    display: flex;
-	    align-items: center;
-	    cursor: pointer;
-	}
+  .menu-icon {
+    width: 24px;
+    height: 18px;
+    background: url("/public/img/menu-1.svg") no-repeat center;
+    background-size: contain;
+  }
 
-	.menu-icon {
-	    width: 24px;
-	    height: 18px;
-	    background: url('/public/img/menu-1.svg') no-repeat center ;
-	    background-size: contain;
-	}
+  .menu-items {
+    position: absolute;
+    top: 50px;
+    left: -60px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+  }
 
-	.menu-items {
-	    position: absolute;
-	    top: 50px;
-	    left: -60px;
-	    height: 0;
-	    overflow: hidden;
-	    transition: height 0.3s ease-out;
-	    background-color: #ffffff;
-	    list-style: none;
-	    padding: 0px;
-	    margin: 0;
-	}
+  .menu-items li {
+    padding: 10px 20px;
+  }
 
-	.menu-items li {
-	    padding: 10px 20px;
-	}
+  .menu-items li a {
+    color: #000000;
+    text-decoration: none;
+  }
 
-	.menu-items li a {
-	    color: #000000;
-	    text-decoration: none;
-	}
+  .menu-toggle:checked ~ .menu-items {
+    height: 120px;
+  }
 
-	.menu-toggle:checked ~ .menu-items {
-	    height: 120px;
-	}
+  .text {
+    position: relative;
+    overflow: hidden;
+    background-color: #261fff;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Manrope", sans-serif;
+    padding: 80px;
+  }
 
-	.text {
-	    background-color: #261fff;
-	    color: #ffffff;
-	    text-align: left;
-	    font-family: "Manrope", sans-serif;
-	    padding: 80px;
-	}
+  .title1 {
+    font-size: 32px;
+    font-weight: 600px;
+    margin: 0;
+    padding: 30px 0px 0px 80px;
+  }
 
-	.title1 {
-	    font-size: 32px;
-	    font-weight: 600px;
-	    margin: 0;
-	    padding: 30px 0px 0px 80px;
-	}
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500px;
+    margin: 0;
+    padding: 20px 0px 10px 80px;
+  }
 
-	.subtitle {
-	    font-size: 20px;
-	    font-weight: 500px;
-	    margin: 0;
-	    padding: 20px 0px 10px 80px;
-	}
+  .logoText {
+    float: right;
+    margin: -30px 50px 0px 0px;
+  }
 
-	.logoText {
-	    float: right;
-	    margin: -30px 50px 0px 0px;
-	}
+  .title2 {
+    text-align: center;
+  }
 
-.title2 {
-	text-align: center;
-}
+  .title2 h1 {
+    font-size: 32px;
+  }
 
-.title2 h1 {
-	font-size: 32px;
-}
+  .title2 h2 {
+    font-size: 20px;
+  }
 
-.title2 h2 {
-	font-size: 20px;
-}
-
-.cards {
+  .cards {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 700px;
-}
+  }
 
-.cards .bg1 {
+  .cards .bg1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -290,9 +329,9 @@
     z-index: 1;
     max-width: 600px;
     max-height: 600px;
-}
+  }
 
-.cards .bg2 {
+  .cards .bg2 {
     position: absolute;
     top: calc(50% + 220px);
     left: calc(50% + 310px);
@@ -300,67 +339,74 @@
     z-index: 2;
     max-width: 280px;
     max-height: 280px;
-}
+  }
 
-
-.card {
+  .card {
     position: absolute;
     z-index: 3;
     background-color: #fff;
     border: 1px solid #ccc;
-	width: 340px;
+    width: 340px;
+    height: 150px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-}
+  }
 
-.card .icon {
+  .card .icon {
     width: 50px;
     height: 50px;
-	margin-top: -40px;
-}
+    margin-top: -40px;
+  }
 
-.card .content {
+  .card .content {
     padding: 10px;
-}
+  }
 
-.card .title {
+  .card .title {
     font-size: 20px;
     margin: 0;
     margin-bottom: 5px;
-}
+  }
 
-.card .subtitle {
+  .card .subtitle {
     font-size: 13px;
     margin: 0;
-	padding: 0px;
-}
+  }
 
-.card1 {
+  .card1 {
     top: 50px;
+    right: 20px;
+    bottom: 20px;
     left: 70px;
-}
+  }
 
-.card2 {
+  .card2 {
     top: 50px;
+    right: 20px;
+    bottom: 20px;
     left: 895px;
-}
+  }
 
-.card3 {
+  .card3 {
     top: 440px;
+    right: 20px;
+    bottom: 20px;
     left: 130px;
-}
+  }
 
-.card4 {
+  .card4 {
     top: 350px;
+    right: 20px;
+    bottom: 20px;
     left: 950px;
-}
+  }
 
-.card5 {
+  .card5 {
     top: 560px;
+    right: 20px;
+    bottom: 20px;
     left: 570px;
-}
-
-
+  }
 </style>
