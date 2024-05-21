@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./buscador.css">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>  
 
@@ -34,18 +36,22 @@
 		
 	</div>
     <div class = "container">
+		<div class = "origen">
 			<label class="label-origen"><b>ORIGEN</b> </label>
             <input class="input" type="text" placeholder="Desde">
-			
+		</div>		
+		<div class = "destino">
 			<label class="label-destino"><b>DESTINO</b> </label>
         	<input class="input" type="text" placeholder="Hasta">
-
+		</div>
+		<div class = "fecha">
 			<label class="label-fecha"><b>FECHA</b> </label>
             <input class="input" type="text" placeholder="Elige la fecha">
-        
+        </div>
+		<div class = "pasajeros">
 			<label class="label-numero"><b>NUMERO DE PASAJEROS</b> </label>
         	<input class="input" type="number" placeholder="0">
-        	
+		</div>
 			<button id = "search">Buscar Viaje</button>
     </div>
     
@@ -56,8 +62,9 @@
 .container {
     background-color: white;
     display: flex;
-    height:  27px;
-    width: 110vh;
+	flex-wrap: wrap;
+    height:  30px;
+    width: 65vw;
     align-items: center;
     justify-content: space-around;
     text-align: center;
@@ -74,32 +81,20 @@
 
 .label-origen{
 	display: block;
-    position: absolute;
-    left: 17px;
-    top: -19px;
 	font-size: x-small;
 }
 
 .label-destino{
 	display: block;
-    position: absolute;
-    left: 187px;
-    top: -19px;
 	font-size: x-small;
 }
 .label-fecha{
 	display: block;
-    position: absolute;
-    left: 356px;
-    top: -19px;
 	font-size: x-small;
 
 }
 .label-numero{
 	display: block;
-    position: absolute;
-    left: 524px;
-    top: -19px;
 	font-size: x-small;
 
 }
@@ -119,6 +114,9 @@
 	font-family: "Manrope", sans-serif;
     margin-left: -3px;
     
+}
+.origen,.fecha,.destino,.pasajeros{
+	margin-top: -2vh;
 }
 
 #search{
