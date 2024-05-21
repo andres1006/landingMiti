@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./buscador.css" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -194,6 +190,7 @@
 
   body {
     background-color: #fff;
+    font-family: "Manrope", sans-serif;
   }
 
   header {
@@ -263,7 +260,6 @@
     background-color: #261fff;
     color: #ffffff;
     text-align: left;
-    font-family: "Manrope", sans-serif;
     padding: 80px;
     z-index: 1;
   }
@@ -305,9 +301,14 @@
     height: 340px;
 	width: 80px;
     border: 70px solid transparent;
-    border-color: #5751ff;
+    background: linear-gradient(#6d69ff, transparent) border-box;
     border-radius: 120px;
     z-index: -1;
+    -webkit-mask: /*4*/
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
 }
 
 .rectangle2 {
@@ -315,11 +316,16 @@
     top: 50%;
     right: -19%; 
     transform: translateY(-50%);
-	height: 80px;
-	width: 340px;
-	border: 70px solid transparent;
-    border-color: #5751ff;
+	  height: 80px;
+	  width: 340px;
+	  border: 70px solid transparent;
+    background: linear-gradient(90deg, #6d69ff, transparent) border-box;
     border-radius: 120px;
+    -webkit-mask: /*4*/
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
 }
 
 
