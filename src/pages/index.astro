@@ -54,6 +54,28 @@
 		</div>
 			<button id = "search">Buscar Viaje</button>
     </div>
+	<footer>
+		<div class="footer-container">
+			<div class="primera-parte">
+				<h2>Where do you want to go?</h2>
+				<div class="rectangulos">
+				<div class="rectangle">
+					<p>Dehi > chandigart</p>
+				</div>
+				<div class="rectangle">
+					<p>D > chandigart</p>
+				</div>
+				
+				<div class="rectangle">
+					<p>A > chandigart</p>
+				</div>
+			</div>
+			</div>
+			<div class="segunda-parte">
+				<p><b>vamos mitimiti</b></p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
 <style>
@@ -227,6 +249,52 @@ html, body {
 	.logoText {
 	    float: right;
 	    margin: -30px 50px 0px 0px;
+	}
+
+	.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+	flex-direction: column;
+	flex: 1
+
+}
+
+footer {
+    position: fixed; /* Cambiado de absolute a fixed */
+    width: 100%;
+    bottom: 0;
+    background-color: #261fff; /* Añadido color de fondo */
+    color: #ffffff; /* Añadido color de texto */
+}
+.rectangulos{
+	display: flex;
+}
+
+.primera-parte{
+		background-color: #261fff;
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Manrope", sans-serif;
+	}
+	.segunda-parte{
+		background-color: #fff;
+		color: #000;
+		text-align: center;
+	    font-family: "Manrope", sans-serif;
+	}
+	.rectangle{
+		width: 16%;  
+    	max-width: 600px;
+		border: solid white;
+		background-color: #fff	;
+		border-radius: 3px;
+		margin-left: 252px;
+    	margin-right: -185px;
+	}
+	.rectangle p{
+		color: gray;
 	}
 
 </style>
