@@ -72,7 +72,19 @@
 			</div>
 			</div>
 			<div class="segunda-parte">
-				<p><b>vamos mitimiti</b></p>
+				<div class="izquierda">
+				<h4><b>Vamos mitimiti</b></h4>
+					<ul class="lista-footer">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Acercate de nosotros</a></li>
+						<li><a href="#">Contactanos</a></li>
+					</ul>
+				</div>
+				<div class="parte-derecha">
+					<h4><b>Registrate para nuestro boletin</b></h4>
+					<input class="input-footer" type="email" placeholder="Tu correo electronico">
+					<button id = "suscribe">Suscribete</button>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -262,11 +274,11 @@ html, body {
 }
 
 footer {
-    position: fixed; /* Cambiado de absolute a fixed */
+    position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: #261fff; /* Añadido color de fondo */
-    color: #ffffff; /* Añadido color de texto */
+    background-color: #261fff; 
+    color: #ffffff; 
 }
 .rectangulos{
 	display: flex;
@@ -279,10 +291,14 @@ footer {
 	    font-family: "Manrope", sans-serif;
 	}
 	.segunda-parte{
+		display: flex;
 		background-color: #fff;
 		color: #000;
-		text-align: center;
-	    font-family: "Manrope", sans-serif;
+		font-family: "Manrope", sans-serif;
+		}
+	.izquierda{
+		margin-left:auto;
+		list-style: none;
 	}
 	.rectangle{
 		width: 16%;  
@@ -296,5 +312,45 @@ footer {
 	.rectangle p{
 		color: gray;
 	}
-
+	.lista-footer{
+		list-style: none;
+		font-family: "Manrope", sans-serif;
+		color: #000;
+		padding: 0;
+		margin-top: -19px;
+	}
+	.parte-derecha{
+		margin-inline-start: auto;
+    	margin-right: auto;
+	}
+	.parte-derecha button{
+	padding: 10px 8px;
+    display: flex;
+    margin: 8px;
+    height: 36px;
+    width: 43vh;
+    background-color: #261fff;
+	color: #ffffff;
+    justify-content: center;
+    border: transparent; 
+    border-radius: 3px;
+	margin-left:auto;
+	font-family: "Manrope", sans-serif;
+	}
+	.input-footer {
+    padding: 10px 8px;
+	padding-right: 14px;
+    display: flex;
+    margin: 8px;
+    height: 15px;
+    width: 43vh;
+    margin-right: -7px;
+    background-color: #f2f2f2;
+    text-align: justify;
+    border: 1px solid gray; 
+    border-radius: 3px;
+	font-family: "Manrope", sans-serif;
+    margin-left: -3px;
+    
+}
 </style>
