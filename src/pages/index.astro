@@ -27,8 +27,57 @@ import Card from '../components/Card.astro';
 			<h2 class="title">Bus or carpool? <br>
 				Your pick of rides at low prices.</h2>
 			<h2 class="subtitle">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit. </h2>
-			
 		</div>
+
+    <div class="blueBG">
+      <p class="text">Let's go. Get a link <br>to download the app.</p>
+      <input class="yourPhone" type="number" placeholder="Enter Your phone number">
+      <input class="linkButton" type="button" value="GET THE LINK">
+  </div>
+  <div class="benefitsTitle">
+      <h2><span>Blablacar</span> benefits you with</h2>
+      <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Velit officia consequat duis enim velit mollit.</h3>
+  </div>
+  <div class="benefitCard benefit01">
+      <div>
+          <h2><span>01.</span> Ease of booking</h2>
+          <h3>Amet minim mollit non deserunt ullamco<br>
+          est sit aliqua dolor do amet sint.</h3>
+          </div>
+      <img src="/public/img/benefit01.png" height="200px">
+  </div>
+  <div class="benefitCard benefit02">
+      <img src="/public/img/benefit02.png" alt="">
+      <div>
+          <h2><span>02.</span> GPS tracking</h2>
+          <h3>Amet minim mollit non deserunt ullamco<br>
+          est sit aliqua dolor do amet sint.</h3>
+      </div>
+  </div>
+  <div class="benefitCard benefit03">
+      <div>
+          <h2><span>03.</span> Comfortable &<br>secure rides</h2>
+          <h3>Amet minim mollit non deserunt ullamco<br>
+          est sit aliqua dolor do amet sint.</h3>
+      </div>
+          <img src="/public/img/benefit03.png" alt="">
+  </div>
+  <div class="benefitCard benefit04">
+      <img src="i/public/img/benefit04.png" alt="">
+      <div>
+          <h2><span>04.</span> Affordable prices</h2>
+          <h3>Amet minim mollit non deserunt ullamco<br>
+          est sit aliqua dolor do amet sint.</h3>
+      </div>
+  </div>
+  <div class="benefitCard benefit05">
+      <div>
+          <h2><span>05.</span> 24/7 Service</h2>
+          <h3>Amet minim mollit non deserunt ullamco<br>
+          est sit aliqua dolor do amet sint.</h3>
+      </div>
+          <img src="/public/img/benefit05.png" alt="">
+  </div>
 	
 	</main>
 </Layout>
@@ -37,7 +86,7 @@ import Card from '../components/Card.astro';
 	@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 	body{
-	    background-color: #000;
+	    background-color: #ffffff;
 	}
 
 	header {
@@ -127,4 +176,70 @@ import Card from '../components/Card.astro';
 	    float: right;
 	    margin: -30px 50px 0px 0px;
 	}
+
+
+
+
+
+  .blueBG{
+    background: #0000f0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.yourPhone {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.yourPhone::placeholder {
+    text-align: center; 
+}
+
+.text{
+    color: #ffffff;
+}
+
+.linkButton{
+    background: #ffffff;
+    color: #0000f0;
+    border: 1px solid #0000f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+}
+
+.benefitsTitle{
+    text-align: center;
+}
+
+.benefitsTitle span {
+    color: #00aff5;
+}
+
+.benefitCard {
+    background-color: #ebeaff;
+    display:flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.benefitCard span {
+    font-size: 90px;
+    color: #054752;
+}
 </style>
