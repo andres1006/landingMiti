@@ -36,51 +36,53 @@
 		
 	</div>
     <div class = "container">
-		<div class = "origen">
-			<label class="label-origen"><b>ORIGEN</b> </label>
+		<div class = "origin">
+			<label class="label-origin"><b>Origen</b> </label>
             <input class="input" type="text" placeholder="Desde">
 		</div>		
-		<div class = "destino">
-			<label class="label-destino"><b>DESTINO</b> </label>
+		<div class = "destination">
+			<label class="label-destination"><b>destino</b> </label>
         	<input class="input" type="text" placeholder="Hasta">
 		</div>
-		<div class = "fecha">
-			<label class="label-fecha"><b>FECHA</b> </label>
-            <input class="input" type="text" placeholder="Elige la fecha">
+		<div class ="Date">
+			<label class="label-Date"><b>Fecha</b> </label>
+            <input class="input" type="text" placeholder="Elige la Date">
         </div>
-		<div class = "pasajeros">
-			<label class="label-numero"><b>NUMERO DE PASAJEROS</b> </label>
+		<div class = "passengers">
+			<label class="label-number"><b>NUMERO DE PASAJEROS</b> </label>
         	<input class="input" type="number" placeholder="0">
 		</div>
 			<button id = "search">Buscar Viaje</button>
     </div>
+	<div class="Blue-line">
+		<h2>Where do you want to go?</h2>
+		<div class="rectangles">
+			<div class="rectangle">
+				<p>Dehi > chandigart</p>
+			</div>
+			<div class="rectangle">
+				<p>D > chandigart</p>
+			</div>
+			
+			<div class="rectangle">
+				<p>A > chandigart</p>
+			</div>
+		</div>
+	</div>
+
 	<footer>
-		<div class="footer-container">
-			<div class="primera-parte">
-				<h2>Where do you want to go?</h2>
-				<div class="rectangulos">
-				<div class="rectangle">
-					<p>Dehi > chandigart</p>
-				</div>
-				<div class="rectangle">
-					<p>D > chandigart</p>
+		<div class="footer-container">	
+			<div class="second-part">
+				<div class="left">
+					<h4><b>Vamos mitimiti</b></h4>
+						<ul class="footer-list">
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#">Acercate de nosotros</a></li>
+							<li><a href="#">Contactanos</a></li>
+						</ul>
 				</div>
 				
-				<div class="rectangle">
-					<p>A > chandigart</p>
-				</div>
-			</div>
-			</div>
-			<div class="segunda-parte">
-				<div class="izquierda">
-				<h4><b>Vamos mitimiti</b></h4>
-					<ul class="lista-footer">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Acercate de nosotros</a></li>
-						<li><a href="#">Contactanos</a></li>
-					</ul>
-				</div>
-				<div class="parte-derecha">
+				<div class="right">
 					<h4><b>Registrate para nuestro boletin</b></h4>
 					<input class="input-footer" type="email" placeholder="Tu correo electronico">
 					<button id = "suscribe">Suscribete</button>
@@ -91,6 +93,7 @@
 </body>
 </html>
 <style>
+
 html, body {
     height: 100%;
 }
@@ -114,21 +117,21 @@ html, body {
 }
 
 
-.label-origen{
+.label-origin{
 	display: block;
 	font-size: x-small;
 }
 
-.label-destino{
+.label-destination{
 	display: block;
 	font-size: x-small;
 }
-.label-fecha{
+.label-Date{
 	display: block;
 	font-size: x-small;
 
 }
-.label-numero{
+.label-number{
 	display: block;
 	font-size: x-small;
 
@@ -150,7 +153,7 @@ html, body {
     margin-left: -3px;
     
 }
-.origen,.fecha,.destino,.pasajeros{
+.origin,.Date,.destination,.passengers{
 	margin-top: -2vh;
 }
 
@@ -169,6 +172,84 @@ html, body {
     border-radius: 3px;
 	font-family: "Manrope", sans-serif;
 }	
+	@media (max-width: 425px) {
+		.container {
+    background-color: white;
+    display: flex;
+	flex-wrap: wrap;
+    height:  40vh; /*285px s*/
+    width: 65vw;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: -37px auto;
+    padding: 0px; 
+    border: 39px solid white;
+	border-radius: 13px;
+    position: relative;
+	font-family: "Manrope", sans-serif;
+	box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
+
+}
+
+
+.label-origin{
+	display: block;
+	font-size: x-small;
+	margin-top: -12px;
+}
+
+.label-destination{
+	display: block;
+	font-size: x-small;
+	margin-top: 12px;
+}
+.label-Date{
+	display: block;
+	font-size: x-small;
+	margin-top: 12px;
+}
+.label-number{
+	display: block;
+	font-size: x-small;
+	margin-top: 12px;
+}
+.input {
+    padding: 10px 8px;
+	padding-right: 14px;
+    display: flex;
+    margin: 10px;
+    height: 15px;
+    width: 126px;
+    margin-right: -7px;
+    background-color: #f2f2f2;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid gray; 
+    border-radius: 3px;
+	font-family: "Manrope", sans-serif;
+    margin-left: -3px;
+    
+}
+.origin,.Date,.destination,.passengers{
+	margin-top: -2vh;
+}
+
+#search{
+    padding: 10px 8px;
+    display: flex;
+    margin: 8px;
+    height: 36px;
+    width: 129px;
+    background-color: #261fff;
+	color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    border: transparent; 
+    border-radius: 3px;
+	font-family: "Manrope", sans-serif;
+	}	
+}
 
 
 	body{
@@ -274,31 +355,22 @@ html, body {
 }
 
 footer {
-    position: fixed;
     width: 100%;
     bottom: 0;
     background-color: #261fff; 
     color: #ffffff; 
 }
-.rectangulos{
+.rectangles{
 	display: flex;
 }
 
-.primera-parte{
+.Blue-line{
 		background-color: #261fff;
 	    color: #ffffff;
 	    text-align: center;
 	    font-family: "Manrope", sans-serif;
-	}
-	.segunda-parte{
-		display: flex;
-		background-color: #fff;
-		color: #000;
-		font-family: "Manrope", sans-serif;
-		}
-	.izquierda{
-		margin-left:auto;
-		list-style: none;
+		padding: 13px;
+		margin-top: 80px;
 	}
 	.rectangle{
 		width: 16%;  
@@ -312,18 +384,60 @@ footer {
 	.rectangle p{
 		color: gray;
 	}
-	.lista-footer{
+
+	@media (max-width: 425px){
+	.rectangles{
+		display: flex;
+    	justify-content: space-around;
+    	flex-direction: column;
+	}
+
+	.Blue-line{
+		background-color: #261fff;
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Manrope", sans-serif;
+		padding: 13px;
+		margin-top: 80px;
+		
+	}
+	.rectangle{
+		width: 68%;  
+    	max-width: 600px;
+		border: solid white;
+		background-color: #fff	;
+		border-radius: 3px;
+		margin-left: auto;
+    	margin-right: auto;
+		margin-bottom: 15px;
+	}
+	.rectangle p{
+		color: gray;
+	}
+}
+	.second-part{
+		display: flex;
+		background-color: #fff;
+		color: #000;
+		font-family: "Manrope", sans-serif;
+		}
+	.left{
+		margin-left:auto;
+		list-style: none;
+	}
+	
+	.footer-list{
 		list-style: none;
 		font-family: "Manrope", sans-serif;
 		color: #000;
 		padding: 0;
 		margin-top: -19px;
 	}
-	.parte-derecha{
+	.right{
 		margin-inline-start: auto;
     	margin-right: auto;
 	}
-	.parte-derecha button{
+	.right button{
 	padding: 10px 8px;
     display: flex;
     margin: 8px;
