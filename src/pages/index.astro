@@ -1,3 +1,7 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,31 +15,36 @@
 </head>
 <body>  
 
-	<header>
-		<div>
-			<img src="/public/img/Ellipse-1.svg" class="logo">
-		</div>
-		<nav class="menu">
-			<input type="checkbox" id="menu-toggle" class="menu-toggle">
-			<label for="menu-toggle" class="menu-button">
-			<span class="menu-icon"></span>
-			</label>
-			<ul class="menu-items">
-				<li><a href="#">Item 1</a></li>
-				<li><a href="#">Item 2</a></li>
-				<li><a href="#">Item 3</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<div class="text">
-		<img src="/public/img/vamosMiti.svg" class="logoText">
-		<h2 class="title">Bus or carpool? <br>
-			Your pick of rides at low prices.</h2>
-		<h2 class="subtitle">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit. </h2>
-		
-	</div>
-    <div class = "container">
+    <Layout title="Welcome to Astro.">
+        <main>
+            <header>
+                <div>
+                    <img src="/public/img/Ellipse-1.svg" class="logo">
+                </div>
+                <nav class="menu">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-button">
+                    <span class="menu-icon"></span>
+                    </label>
+                    <ul class="menu-items">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="textHeader">
+                <img src="/public/img/vamosMiti.svg" class="logoText">
+                <div class="textHeaderContent">
+                    <h2 class="title">Bus or carpool? <br>
+                        Your pick of rides at low prices.</h2>
+                    <h2 class="subtitle">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit. </h2>
+                </div>
+                
+            </div>
+
+			<div class = "container">
 		<div class = "origin">
 			<label class="label-origin"><b>Origen</b> </label>
             <input class="input" type="text" placeholder="Desde">
@@ -54,42 +63,98 @@
 		</div>
 			<button id = "search">Buscar Viaje</button>
     </div>
-	<div class="Blue-line">
-		<h2>Where do you want to go?</h2>
-		<div class="rectangles">
-			<div class="rectangle">
-				<p>Dehi > chandigart</p>
-			</div>
-			<div class="rectangle">
-				<p>D > chandigart</p>
-			</div>
-			
-			<div class="rectangle">
-				<p>A > chandigart</p>
-			</div>
-		</div>
-	</div>
+            
+            <div class="suscribe">
+                <p class="textBenefits">Let's go. Get a link <br>to download the app.</p>
+                <input class="yourPhone" type="number" placeholder="Enter Your phone number">
+                <input class="linkButton" type="button" value="GET THE LINK">
+            </div>
+            
+            <div class="benefitsTitle">
+                <h2><span>Blablacar</span> benefits you with</h2>
+                <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Velit officia consequat duis enim velit mollit.</h3>
+            </div>
 
-	<footer>
-		<div class="footer-container">	
-			<div class="second-part">
-				<div class="left">
-					<h4><b>Vamos mitimiti</b></h4>
-						<ul class="footer-list">
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Acercate de nosotros</a></li>
-							<li><a href="#">Contactanos</a></li>
-						</ul>
-				</div>
-				
-				<div class="right">
-					<h4><b>Registrate para nuestro boletin</b></h4>
-					<input class="input-footer" type="email" placeholder="Tu correo electronico">
-					<button id = "suscribe">Suscribete</button>
+            <div class="benefitCard benefit01">
+                <div>
+                    <h2><span>01.</span> Ease of booking</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br>est sit aliqua dolor do amet sint.</h3>
+                </div>
+                <img src="/public/img/benefit01.png" height="200px">
+            </div>
+
+            <div class="benefitCard benefit02">
+                <img src="/public/img/benefit02.png" height="200px">
+                <div>
+                    <h2><span>02.</span> GPS tracking</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+            </div>
+
+            <div class="benefitCard benefit03">
+                <div>
+                    <h2><span>03.</span> Comfortable &<br>secure rides</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+                <img src="/public/img/benefit03.png" height="200px">
+            </div>
+
+            <div class="benefitCard benefit04">
+                <img src="/public/img/benefit04.png" height="200px">
+                <div>
+                    <h2><span>04.</span> Affordable prices</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+            </div>
+
+            <div class="benefitCard benefit05">
+                <div>
+                    <h2><span>05.</span> 24/7 Service</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+                <img src="/public/img/benefit05.png" height="150px">
+            </div>
+        
+			<div class="Blue-line">
+				<h2>Where do you want to go?</h2>
+				<div class="rectangles">
+					<div class="rectangle">
+						<p>Dehi > chandigart</p>
+					</div>
+					<div class="rectangle">
+						<p>D > chandigart</p>
+					</div>
+					
+					<div class="rectangle">
+						<p>A > chandigart</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		
+			<footer>
+				<div class="footer-container">	
+					<div class="second-part">
+						<div class="left">
+							<h4><b>Vamos mitimiti</b></h4>
+								<ul class="footer-list">
+									<li><a href="#">Inicio</a></li>
+									<li><a href="#">Acercate de nosotros</a></li>
+									<li><a href="#">Contactanos</a></li>
+								</ul>
+						</div>
+						
+						<div class="right">
+							<h4><b>Registrate para nuestro boletin</b></h4>
+							<input class="input-footer" type="email" placeholder="Tu correo electronico">
+							<button id = "suscribe">Suscribete</button>
+						</div>
+					</div>
+				</div>
+			</footer>
+        </main>
+
+    </Layout>
+
 </body>
 </html>
 <style>
@@ -433,88 +498,64 @@ html, body {
 	    background-color: #fff;
 	}
 
-	header {
-	    display: flex;
-	    justify-content: space-between;
-	    align-items: center;
-	    height: 60px;
-	    padding: 0 20px;
-	    background-color: #ffffff;
-	    color: #000;
-	}
 
-	.logo {
-	    width: 50px;
-	}
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-	.menu {
-	    position: relative;
-	}
+        body{
+            background-color: #ffffff;
+        }
 
-	.menu-toggle {
-	    display: none;
-	}
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 20px;
+            background-color: #ffffff;
+            color: #000;
+        }
 
-	.menu-button {
-	    display: flex;
-	    align-items: center;
-	    cursor: pointer;
-	}
+        .logo {
+            width: 50px;
+        }
 
-	.menu-icon {
-	    width: 24px;
-	    height: 18px;
-	    background: url('/public/img/menu-1.svg') no-repeat center ;
-	    background-size: contain;
-	}
+        .menu {
+            position: relative;
+        }
 
-	.menu-items {
-	    position: absolute;
-	    top: 50px;
-	    left: -60px;
-	    height: 0;
-	    overflow: hidden;
-	    transition: height 0.3s ease-out;
-	    background-color: #ffffff;
-	    list-style: none;
-	    padding: 0px;
-	    margin: 0;
-	}
+        .menu-toggle {
+            display: none;
+        }
 
-	.menu-items li {
-	    padding: 10px 20px;
-	}
+        .menu-button {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
 
-	.menu-items li a {
-	    color: #000000;
-	    text-decoration: none;
-	}
+        .menu-icon {
+            width: 24px;
+            height: 18px;
+            background: url('/public/img/menu-1.svg') no-repeat center ;
+            background-size: contain;
+        }
 
-	.menu-toggle:checked ~ .menu-items {
-	    height: 120px;
-	}
+        .menu-items {
+            position: absolute;
+            top: 50px;
+            left: -60px;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.3s ease-out;
+            background-color: #ffffff;
+            list-style: none;
+            padding: 0px;
+            margin: 0;
+        }
 
-	.text {
-	    background-color: #261fff;
-	    color: #ffffff;
-	    text-align: left;
-	    font-family: "Manrope", sans-serif;
-	    padding: 80px;
-	}
-
-	.title {
-	    font-size: 32px;
-	    font-weight: 600px;
-	    margin: 0;
-	    padding: 30px 0px 0px 80px;
-	}
-
-	.subtitle {
-	    font-size: 20px;
-	    font-weight: 500px;
-	    margin: 0;
-	    padding: 20px 0px 10px 80px;
-	}
+        .menu-items li {
+            padding: 10px 20px;
+        }
 
 	.logoText {
 	    float: right;
@@ -743,7 +784,316 @@ html, body {
     border-radius: 3px;
 	font-family: "Manrope", sans-serif;
     margin-left: auto;
+	}
 }
 
-}
-</style>
+        .menu-items li a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .menu-toggle:checked ~ .menu-items {
+            height: 120px;
+        }
+
+        .textHeader {
+            background-color: #261fff;
+            color: #ffffff;
+            text-align: left;
+            font-family: "Manrope", sans-serif;
+            padding: 80px;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 600px;
+            margin: 0;
+            padding: 30px 0px 0px 80px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 500px;
+            margin: 0;
+            padding: 20px 0px 10px 80px;
+        }
+
+        .logoText {
+            float: right;
+            margin: -30px 50px 0px 0px;
+        }
+
+        .suscribe{
+            background: #0000f0;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 90%;
+            margin: 70px auto;
+            padding: 20px;
+			
+        }
+
+        .yourPhone {
+            width: 400px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .yourPhone::placeholder {
+            text-align: center; 
+        }
+
+        .textBenefits{
+            color: #ffffff;
+        }
+
+        .linkButton{
+            background: #ffffff;
+            color: #0000f0;
+            border: 1px solid #0000f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 200px;
+            height: 40px;
+        }
+
+        .benefitsTitle{
+            text-align: center;
+        }
+
+        .benefitsTitle span {
+            color: #00aff5;
+        }
+
+        .benefitCard {
+            background-color: #ebeaff;
+            display:flex;
+            justify-content: space-around;
+            width: 80%;
+            height: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .benefitCard span {
+            font-size: 90px;
+            color: #054752;
+        }
+
+        @media (max-width: 320px) {
+
+        .textHeader {
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 10px 0px 0px 20px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px 0px 10px 20px;
+        }
+
+        .logoText {
+            float: none;
+            margin: 0 auto 20px;
+            display: block;
+            height: 70px;
+        }
+
+        .suscribe {
+            background: #0000f9;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            flex-direction: column;
+        }
+
+        .yourPhone {
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .yourPhone::placeholder {
+            text-align: center;
+        }
+
+        .textBenefits {
+            color: #ffffff;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .linkButton {
+            background: #ffffff;
+            color: #0000f0;
+            border: 1px solid #0000f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 80%;
+            height: 40px;
+            text-align: center;
+        }
+
+        .benefitsTitle {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+    }
+
+        .benefitsTitle span {
+            color: #00aff5;
+        }
+
+        .benefitsTitle h3 {
+            font-size: 15px;
+        }
+
+        .benefitCard {
+            background-color: #ebeaff;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;        
+        }
+
+        .benefitCard span {
+            font-size: 24px;
+            color: #054752;
+            text-align: center;
+        }
+
+        .benefitCard img {
+            height: 150px;
+        }
+    }
+
+        @media (max-width: 480px) {
+
+    .textHeader {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 10px 0px 0px 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 0px 10px 20px;
+    }
+
+    .logoText {
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+        height: 140px;
+    }
+
+    .suscribe {
+        background: #0000f9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .yourPhone {
+        width: 80%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .yourPhone::placeholder {
+        text-align: center;
+    }
+
+    .textBenefits {
+        color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .linkButton {
+        background: #ffffff;
+        color: #0000f0;
+        border: 1px solid #0000f0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+    }
+
+    .benefitsTitle {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .benefitsTitle span {
+        color: #00aff5;
+    }
+
+    .benefitsTitle h3 {
+        font-size: 15px;
+    }
+
+    .benefitCard {
+        background-color: #ebeaff;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;        
+    }
+
+    .benefitCard span {
+        font-size: 24px;
+        color: #054752;
+        text-align: center;
+    }
+
+    .benefitCard img {
+        height: 180px;
+    }
+    }
+
+        </style>
