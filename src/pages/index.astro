@@ -1,4 +1,8 @@
-<!doctype html>
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -6,284 +10,898 @@
     <link rel="stylesheet" href="./buscador.css" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div>
-        <img src="/public/img/Ellipse-1.svg" class="logo" />
-      </div>
-      <nav class="menu">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="menu-button">
-          <span class="menu-icon"></span>
-        </label>
-        <ul class="menu-items">
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-        </ul>
-      </nav>
-    </header>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>  
 
-    <div class="text">
-      <div class="circle"></div>
-      <div class="rectangle1"></div>
-	  <div class="rectangle2"></div>
-      <img src="/public/img/vamosMiti.svg" class="logoText" />
-      <h2 class="title1">
-        Bus or carpool? <br />
-        Your pick of rides at low prices.
-      </h2>
-      <h2 class="subtitle">
-        Amet minim mollit non deserunt ullamco est sit<br /> aliqua dolor do amet
-        sint. Velit officia consequat<br /> duis enim velit mollit.
-      </h2>
+    <Layout title="Welcome to Astro.">
+        <main>
+            <header>
+                <div>
+                    <img src="/public/img/Ellipse-1.svg" class="logo">
+                </div>
+                <nav class="menu">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-button">
+                    <span class="menu-icon"></span>
+                    </label>
+                    <ul class="menu-items">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="textHeader">
+                <div class="circle"></div>
+            <div class="rectangle1"></div>
+            <div class="rectangle2"></div>
+                <img src="/public/img/vamosMiti.svg" class="logoText">
+                <div class="textHeaderContent">
+                    <h2 class="title">Bus or carpool? <br>
+                        Your pick of rides at low prices.</h2>
+                    <h2 class="subtitle">Amet minim mollit non deserunt ullamco est sit<br> aliqua dolor do amet sint. Velit officia consequat<br> duis enim velit mollit. </h2>
+                </div>
+                
+            </div>
+
+			<div class = "container">
+		<div class = "origin">
+			<label class="label-origin"><b>Origen</b> </label>
+            <input class="input" type="text" placeholder="Desde">
+		</div>		
+		<div class = "destination">
+			<label class="label-destination"><b>destino</b> </label>
+        	<input class="input" type="text" placeholder="Hasta">
+		</div>
+		<div class ="Date">
+			<label class="label-Date"><b>Fecha</b> </label>
+            <input class="input" type="text" placeholder="Elige la Date">
+        </div>
+		<div class = "passengers">
+			<label class="label-number"><b>NUMERO DE PASAJEROS</b> </label>
+        	<input class="input" type="number" placeholder="0">
+		</div>
+			<button id = "search">Buscar Viaje</button>
     </div>
+            
+            <div class="suscribe">
+                <p class="textBenefits">Let's go. Get a link <br>to download the app.</p>
+                <input class="yourPhone" type="number" placeholder="Enter Your phone number">
+                <input class="linkButton" type="button" value="GET THE LINK">
+            </div>
+            
+            <div class="cards">
+                <img class="bg1" src="/public/img/bg1.svg" />
+                <img class="bg2" src="/public/img/bg2.svg" />
+          
+          
+                <div class="card card1">
+                  <img src="/public/img/num1.png" alt="Icono" class="icon" />
+                  <div class="content">
+                    <h3 class="title">Fill your details</h3>
+                    <p class="subtitle">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                      sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                  </div>
+                </div>
+          
+          
+                <div class="card card2">
+                  <img src="/public/img/num2.png" alt="Icono" class="icon" />
+                  <div class="content">
+                    <h3 class="title">Search for the perfect rides</h3>
+                    <p class="subtitle">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                      sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                  </div>
+                </div>
+          
+          
+                <div class="card card3">
+                  <img src="/public/img/num3.png" alt="Icono" class="icon" />
+                  <div class="content">
+                    <h3 class="title">Select the route</h3>
+                    <p class="subtitle">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                      sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                  </div>
+                </div>
+          
+          
+                <div class="card card4">
+                  <img src="/public/img/num4.png" alt="Icono" class="icon" />
+                  <div class="content">
+                    <h3 class="title">Talk to the driver</h3>
+                    <p class="subtitle">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                      sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                  </div>
+                </div>
+          
+          
+                <div class="card card5">
+                  <img src="/public/img/num5.png" alt="Icono" class="icon" />
+                  <div class="content">
+                    <h3 class="title">Confirm your seat</h3>
+                    <p class="subtitle">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                      sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="benefitsTitle">
+                <h2><span>Blablacar</span> benefits you with</h2>
+                <h3>Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>amet sint. Velit officia consequat duis enim velit mollit.</h3>
+            </div>
 
-    <div class="container">
-      <input class="input" type="text" placeholder="Leaving from" />
+            <div class="benefitCard benefit01">
+                <div>
+                    <h2><span>01.</span> Ease of booking</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br>est sit aliqua dolor do amet sint.</h3>
+                </div>
+                <img src="/public/img/benefit01.png" height="200px">
+            </div>
 
-      <input class="input" type="text" placeholder="Going to" />
-      <div class="input-container">
-        <input class="input" type="text" placeholder="Select the date" />
-        <i class="fa-regular fa-calendar fa-2xs"></i>
-      </div>
-      <input class="input" type="number" placeholder="No. of travelers" />
-      <button id="search">Search</button>
-    </div>
+            <div class="benefitCard benefit02">
+                <img src="/public/img/benefit02.png" height="200px">
+                <div>
+                    <h2><span>02.</span> GPS tracking</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+            </div>
 
-    <div class="title2">
-      <h1>How does it work?</h1>
-      <h2>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br
-        />amet sint. Velit officia consequat duis enim velit mollit.
-      </h2>
-    </div>
+            <div class="benefitCard benefit03">
+                <div>
+                    <h2><span>03.</span> Comfortable &<br>secure rides</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+                <img src="/public/img/benefit03.png" height="200px">
+            </div>
 
-    <div class="cards">
-      <img class="bg1" src="/public/img/bg1.svg" />
-      <img class="bg2" src="/public/img/bg2.svg" />
+            <div class="benefitCard benefit04">
+                <img src="/public/img/benefit04.png" height="200px">
+                <div>
+                    <h2><span>04.</span> Affordable prices</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+            </div>
 
-      <div class="card card1">
-        <img src="/public/img/num1.png" alt="Icono" class="icon" />
-        <div class="content">
-          <h3 class="title">Fill your details</h3>
-          <p class="subtitle">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-      </div>
+            <div class="benefitCard benefit05">
+                <div>
+                    <h2><span>05.</span> 24/7 Service</h2>
+                    <h3>Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint.</h3>
+                </div>
+                <img src="/public/img/benefit05.png" height="150px">
+            </div>
+        
+			<div class="Blue-line">
+				<h2>Where do you want to go?</h2>
+				<div class="rectangles">
+					<div class="rectangle">
+						<p>Dehi > chandigart</p>
+					</div>
+					<div class="rectangle">
+						<p>D > chandigart</p>
+					</div>
+					
+					<div class="rectangle">
+						<p>A > chandigart</p>
+					</div>
+				</div>
+			</div>
+		
+			<footer>
+				<div class="footer-container">	
+					<div class="second-part">
+						<div class="left">
+							<h4><b>Vamos mitimiti</b></h4>
+								<ul class="footer-list">
+									<li><a href="#">Inicio</a></li>
+									<li><a href="#">Acercate de nosotros</a></li>
+									<li><a href="#">Contactanos</a></li>
+								</ul>
+						</div>
+						
+						<div class="right">
+							<h4><b>Registrate para nuestro boletin</b></h4>
+							<input class="input-footer" type="email" placeholder="Tu correo electronico">
+							<button id = "suscribe">Suscribete</button>
+						</div>
+					</div>
+				</div>
+			</footer>
+        </main>
 
-      <div class="card card2">
-        <img src="/public/img/num2.png" alt="Icono" class="icon" />
-        <div class="content">
-          <h3 class="title">Search for the perfect rides</h3>
-          <p class="subtitle">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-      </div>
+    </Layout>
 
-      <div class="card card3">
-        <img src="/public/img/num3.png" alt="Icono" class="icon" />
-        <div class="content">
-          <h3 class="title">Select the route</h3>
-          <p class="subtitle">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-      </div>
-
-      <div class="card card4">
-        <img src="/public/img/num4.png" alt="Icono" class="icon" />
-        <div class="content">
-          <h3 class="title">Talk to the driver</h3>
-          <p class="subtitle">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-      </div>
-
-      <div class="card card5">
-        <img src="/public/img/num5.png" alt="Icono" class="icon" />
-        <div class="content">
-          <h3 class="title">Confirm your seat</h3>
-          <p class="subtitle">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
+</body>
 </html>
 <style>
-	
-  .container {
-    background-color: transparent;
+
+html, body {
+    height: 100%;
+}
+.container {
+    background-color: white;
     display: flex;
-    height: 48px;
-    width: 96vh;
+	flex-wrap: wrap;
+    height:  30px;
+    width: 65vw;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    margin: 20px;
-    padding: 0px;
-    border: 2px solid #9fddf5;
-  }
-  .input-container {
+    margin: -37px auto;
+    padding: 0px; 
+    border: 39px solid white;
+	border-radius: 13px;
     position: relative;
-    color: #dbdbdb;
-  }
+	font-family: "Manrope", sans-serif;
+	box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
 
-  .fa-circle {
-    position: relative;
-    color: #dbdbdb;
-    left: -90px;
-  }
-  .fa-calendar {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-    font-size: 1em;
-    left: -90px;
-  }
+}
 
-  .input {
+
+.label-origin{
+	display: block;
+	font-size: x-small;
+}
+
+.label-destination{
+	display: block;
+	font-size: x-small;
+}
+.label-Date{
+	display: block;
+	font-size: x-small;
+
+}
+.label-number{
+	display: block;
+	font-size: x-small;
+
+}
+.input {
     padding: 10px 8px;
-    padding-right: 12px;
+	padding-right: 14px;
     display: flex;
     margin: 8px;
-    height: 22px;
+    height: 15px;
     width: 126px;
     margin-right: -7px;
     background-color: #f2f2f2;
     justify-content: center;
     text-align: center;
-    border: transparent;
+    border: 1px solid gray; 
     border-radius: 3px;
-    font-family: Unisketch Light;
+	font-family: "Manrope", sans-serif;
     margin-left: -3px;
-  }
+    
+}
+.origin,.Date,.destination,.passengers{
+	margin-top: -2vh;
+}
 
   #search {
     padding: 10px 8px;
     display: flex;
     margin: 8px;
-    height: 40px;
-    width: 103px;
-    margin-right: 2px;
-    background-color: #31aff5;
+    height: 36px;
+    width: 129px;
+    margin-right: -18px;
+    background-color: #261fff;
+	color: #ffffff;
     justify-content: center;
     text-align: center;
     border: transparent;
     border-radius: 3px;
-    font-family: Unisketch Light;
-  }
+	font-family: "Manrope", sans-serif;
+}	
+@media (max-width: 425px) {
+	.container {
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		height:  78vh; 
+		width: 65vw;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		margin: -37px auto;
+		padding: 0px; 
+		border: 39px solid white;
+		border-radius: 13px;
+		position: relative;
+		font-family: "Manrope", sans-serif;
+		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
 
-  body {
-    background-color: #fff;
-    font-family: "Manrope", sans-serif;
-  }
+	}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 0 20px;
-    background-color: #ffffff;
-    color: #000;
-  }
 
-  .logo {
-    width: 50px;
-  }
+	.label-origin{
+		display: block;
+		font-size: x-small;
+		margin-top: -12px;
+	}
 
-  .menu {
-    position: relative;
-  }
+	.label-destination{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.label-Date{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.label-number{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.input {
+		padding: 10px 8px;
+		padding-right: 14px;
+		display: flex;
+		margin: 10px;
+		height: 15px;
+		width: 126px;
+		margin-right: -7px;
+		background-color: #f2f2f2;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid gray; 
+		border-radius: 3px;
+		font-family: "Manrope", sans-serif;
+		margin-left: -3px;
+		
+	}
+	.origin,.Date,.destination,.passengers{
+		margin-top: -2vh;
+	}
 
-  .menu-toggle {
-    display: none;
-  }
+	#search{
+		padding: 10px 8px;
+		display: flex;
+		margin: 8px;
+		height: 36px;
+		width: 129px;
+		background-color: #261fff;
+		color: #ffffff;
+		justify-content: center;
+		text-align: center;
+		border: transparent; 
+		border-radius: 3px;
+		font-family: "Manrope", sans-serif;
+	}	
+}
 
-  .menu-button {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
+@media (max-width: 768px) {
+	.container {
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		height:  auto; 
+		width: 50vw;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		margin: -37px auto;
+		padding: 0px; 
+		border: 39px solid white;
+		border-radius: 13px;
+		position: relative;
+		font-family: "Manrope", sans-serif;
+		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
 
-  .menu-icon {
-    width: 24px;
-    height: 18px;
-    background: url("/public/img/menu-1.svg") no-repeat center;
-    background-size: contain;
-  }
+	}
 
-  .menu-items {
-    position: absolute;
-    top: 50px;
-    left: -60px;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-out;
-    background-color: #ffffff;
-    list-style: none;
-    padding: 0px;
-    margin: 0;
-  }
 
-  .menu-items li {
-    padding: 10px 20px;
-  }
+	.label-origin{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
 
-  .menu-items li a {
-    color: #000000;
-    text-decoration: none;
-  }
+	.label-destination{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.label-Date{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.label-number{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.input {
+		padding: 10px 8px;
+		padding-right: 14px;
+		display: flex;
+		margin: 10px;
+		height: 15px;
+		width: 126px;
+		margin-right: -7px;
+		background-color: #f2f2f2;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid gray; 
+		border-radius: 3px;
+		font-family: "Manrope", sans-serif;
+		margin-left: -3px;
+		
+	}
+	.origin,.Date,.destination,.passengers{
+		margin-top: -2vh;
+	}
 
-  .menu-toggle:checked ~ .menu-items {
-    height: 120px;
-  }
+	#search{
+		padding: 10px 8px;
+		display: flex;
+		margin: 8px;
+		height: 36px;
+		width: 129px;
+		background-color: #261fff;
+		color: #ffffff;
+		justify-content: center;
+		text-align: center;
+		border: transparent; 
+		border-radius: 3px;
+		font-family: "Manrope", sans-serif;
+	}	
+}
 
-  .text {
-    position: relative;
-    overflow: hidden;
-    background-color: #261fff;
-    color: #ffffff;
-    text-align: left;
-    padding: 80px;
-    z-index: 1;
-  }
+@media (max-width: 1024px) {
+	.container {
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		height:  auto; 
+		width: 35vw;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		margin: -37px auto;
+		padding: 0px; 
+		border: 39px solid white;
+		border-radius: 13px;
+		position: relative;
+		font-family: "Manrope", sans-serif;
+		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
 
-  .title1 {
-    font-size: 32px;
-    font-weight: 600px;
-    margin: 0;
-    padding: 30px 0px 0px 80px;
-  }
+	}
 
-  .subtitle {
-    font-size: 20px;
-    font-weight: 500px;
-    margin: 0;
-    padding: 20px 0px 10px 80px;
-  }
+
+	.label-origin{
+		display: block;
+		font-size: x-small;
+		margin-top: 13px;
+	}
+
+	.label-destination{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.label-Date{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.label-number{
+		display: block;
+		font-size: x-small;
+		margin-top: 12px;
+	}
+	.input {
+		padding: 10px 8px;
+		padding-right: 14px;
+		display: flex;
+		margin: 10px;
+		height: 15px;
+		width: 126px;
+		margin-right: -7px;
+		background-color: #f2f2f2;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid gray; 
+		border-radius: 3px;
+		font-family: "Manrope", sans-serif;
+		margin-left: -3px;
+		
+	}
+	.origin,.Date,.destination,.passengers{
+		margin-top: -2vh;
+	}
+
+	#search{
+		padding: 10px 8px;
+		display: flex;
+		margin: 8px;
+		height: 36px;
+		width: 129px;
+		background-color: #261fff;
+		color: #ffffff;
+		justify-content: center;
+		text-align: center;
+		border: transparent; 
+		border-radius: 3px;
+		font-family: "Manrope", sans-serif;
+	}	
+}
+@media (max-width: 320px) {
+	.container {
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		height:  auto; 
+		width: 45vw;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		margin: -37px auto;
+		padding: 0px; 
+		border: 39px solid white;
+		border-radius: 13px;
+		position: relative;
+		font-family: "Manrope", sans-serif;
+		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
+
+	}
+}
+
+	body{
+	    background-color: #fff;
+	}
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+        body{
+            background-color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 20px;
+            background-color: #ffffff;
+            color: #000;
+        }
+
+
+        .logo {
+            width: 50px;
+        }
+
+        .menu {
+            position: relative;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-button {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            width: 24px;
+            height: 18px;
+            background: url('/public/img/menu-1.svg') no-repeat center ;
+            background-size: contain;
+        }
+
+        .menu-items {
+            position: absolute;
+            top: 50px;
+            left: -60px;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.3s ease-out;
+            background-color: #ffffff;
+            list-style: none;
+            padding: 0px;
+            margin: 0;
+        }
+
+        .menu-items li {
+            padding: 10px 20px;
+        }
 
 	.logoText {
 	    float: right;
-	    margin: -30px 190px 0px 0px;
+	    margin: -30px 50px 0px 0px;
 	}
 
-	.circle {
+
+.rectangles{
+	display: flex;
+}
+
+.Blue-line{
+		background-color: #261fff;
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Manrope", sans-serif;
+		padding: 13px;
+		margin-top: 80px;
+	}
+	.rectangle{
+		width: 16%;  
+    	max-width: 600px;
+		border: solid white;
+		background-color: #fff	;
+		border-radius: 3px;
+		margin-left: 252px;
+    	margin-right: -185px;
+	}
+	.rectangle p{
+		color: gray;
+	}
+
+@media (max-width: 768px){
+	.rectangles{
+		display: flex;
+    	justify-content: space-around;
+    	flex-direction: row;
+	}
+
+	.Blue-line{
+		background-color: #261fff;
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Manrope", sans-serif;
+		padding: 13px;
+		margin-top: 80px;
+		
+	}
+	.rectangle{
+		width: 25%;
+    	max-width: 600px;
+    	border: solid white;
+    	background-color: #fff;
+    	border-radius: 3px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.rectangle p{
+		color: gray;
+	}
+}
+
+@media (max-width: 425px){
+	.rectangles{
+		display: flex;
+    	justify-content: space-around;
+    	flex-direction: column;
+	}
+
+	.Blue-line{
+		background-color: #261fff;
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Manrope", sans-serif;
+		padding: 13px;
+		margin-top: 80px;
+		
+	}
+	.rectangle{
+		width: 68%;  
+    	max-width: 600px;
+		border: solid white;
+		background-color: #fff	;
+		border-radius: 3px;
+		margin-left: auto;
+    	margin-right: auto;
+		margin-bottom: 15px;
+	}
+	.rectangle p{
+		color: gray;
+	}
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+	flex-direction: column;
+	flex: 1
+
+}
+	footer {
+		width: 100%;
+		bottom: 0;
+		background-color: #261fff; 
+		color: #ffffff; 
+	}
+	.second-part{
+		display: flex;
+		background-color: #fff;
+		color: #000;
+		font-family: "Manrope", sans-serif;
+		}
+	.left{
+		margin-left:auto;
+		list-style: none;
+	}
+	
+	.footer-list{
+		list-style: none;
+		font-family: "Manrope", sans-serif;
+		color: #000;
+		padding: 0;
+		margin-top: -19px;
+	}
+	.right{
+		margin-inline-start: auto;
+    	margin-right: auto;
+	}
+	.right button{
+	padding: 10px 8px;
+    display: flex;
+    margin: 8px;
+    height: 36px;
+    width: 42vw;
+    background-color: #261fff;
+	color: #ffffff;
+    justify-content: center;
+    border: transparent; 
+    border-radius: 3px;
+	margin-left:auto;
+	font-family: "Manrope", sans-serif;
+	}
+	.input-footer {
+    padding: 10px 8px;
+	padding-right: 14px;
+    display: flex;
+    margin: 8px;
+    height: 15px;
+    width: 43vw;
+    margin-right: -7px;
+    background-color: #f2f2f2;
+    text-align: justify;
+    border: 1px solid gray; 
+    border-radius: 3px;
+	font-family: "Manrope", sans-serif;
+    margin-left: -3px;
+}
+@media (max-width: 425px){
+
+	.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+	flex-direction: column;
+	flex: 1
+
+}
+	footer {
+		width: 100%;
+		bottom: 0;
+		background-color: #261fff; 
+		color: #ffffff; 
+	}
+	.second-part{
+		display: flex;
+    	background-color: #fff;
+    	color: #000;
+    	font-family: "Manrope", sans-serif;
+    	flex-direction: column;
+	}
+
+	.left{
+		margin-left:auto;
+		list-style: none;
+		margin-right: auto;
+	}
+	
+	.footer-list{
+		list-style: none;
+		font-family: "Manrope", sans-serif;
+		color: #000;
+		padding: 0;
+		margin-top: -19px;
+	}
+	.right{
+		margin-inline-start: auto;	
+    	margin-right: auto;
+	}
+	.right button{
+	padding: 10px 8px;
+    display: flex;
+    margin: 8px;
+    height: 36px;
+    width: 80vw;
+    background-color: #261fff;
+	color: #ffffff;
+    justify-content: center;
+    border: transparent; 
+    border-radius: 3px;
+	margin-left:auto;
+	font-family: "Manrope", sans-serif;
+	}
+	.input-footer {
+    padding: 10px 8px;
+	padding-right: 14px;
+    display: flex;
+    margin: 8px;
+    height: 2vh;
+    width: 80vw;
+    margin-right: auto;
+    background-color: #f2f2f2;
+    text-align: justify;
+    border: 1px solid gray; 
+    border-radius: 3px;
+	font-family: "Manrope", sans-serif;
+    margin-left: auto;
+	}
+}
+
+        .menu-items li a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .menu-toggle:checked ~ .menu-items {
+            height: 120px;
+        }
+
+        .textHeader {
+            position: relative;
+        overflow: hidden;
+        background-color: #261fff;
+        color: #ffffff;
+        text-align: left;
+        padding: 80px;
+        z-index: 1;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 600px;
+            margin: 0;
+            padding: 30px 0px 0px 80px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 500px;
+            margin: 0;
+            padding: 20px 0px 10px 80px;
+        }
+
+
+        .logoText {
+            float: right;
+            margin: -30px 50px 0px 0px;
+        }
+        
+        .logoText {
+        float: right;
+        margin: -30px 190px 0px 0px;
+    }
+
+
+    .circle {
     position: absolute;
     bottom: -20px;
     left: -65px;
@@ -293,61 +911,89 @@
     border-radius: 50%;
 }
 
+
 .rectangle1 {
     position: absolute;
     top: 10%;
     left: 22%;
     transform: translateX(-50%);
     height: 340px;
-	width: 80px;
+    width: 80px;
     border: 70px solid transparent;
     background: linear-gradient(#6d69ff, transparent) border-box;
     border-radius: 120px;
     z-index: -1;
     -webkit-mask: /*4*/
-    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor; /*5'*/
           mask-composite: exclude; /*5*/
 }
+
 
 .rectangle2 {
     position: absolute;
     top: 50%;
-    right: -19%; 
+    right: -19%;
     transform: translateY(-50%);
-	  height: 80px;
-	  width: 340px;
-	  border: 70px solid transparent;
+      height: 80px;
+      width: 340px;
+      border: 70px solid transparent;
     background: linear-gradient(90deg, #6d69ff, transparent) border-box;
     border-radius: 120px;
     -webkit-mask: /*4*/
-    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor; /*5'*/
           mask-composite: exclude; /*5*/
 }
 
 
-  .title2 {
-    text-align: center;
-  }
+        .suscribe{
+            background: #0000f0;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 90%;
+            margin: 70px auto;
+            padding: 20px;
+			
+        }
 
-  .title2 h1 {
-    font-size: 32px;
-  }
+        .yourPhone {
+            width: 400px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+        }
 
-  .title2 h2 {
-    font-size: 20px;
-  }
+        .yourPhone::placeholder {
+            text-align: center; 
+        }
 
-  .cards {
+        .textBenefits{
+            color: #ffffff;
+        }
+
+        .linkButton{
+            background: #ffffff;
+            color: #0000f0;
+            border: 1px solid #0000f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 200px;
+            height: 40px;
+        }
+
+        .cards {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 700px;
   }
+
 
   .cards .bg1 {
     position: absolute;
@@ -359,6 +1005,7 @@
     max-height: 600px;
   }
 
+
   .cards .bg2 {
     position: absolute;
     top: calc(50% + 220px);
@@ -368,6 +1015,7 @@
     max-width: 280px;
     max-height: 280px;
   }
+
 
   .card {
     position: absolute;
@@ -382,15 +1030,18 @@
     flex-direction: column;
   }
 
+
   .card .icon {
     width: 50px;
     height: 50px;
     margin-top: -40px;
   }
 
+
   .card .content {
     padding: 10px;
   }
+
 
   .card .title {
     font-size: 20px;
@@ -398,10 +1049,12 @@
     margin-bottom: 5px;
   }
 
+
   .card .subtitle {
     font-size: 13px;
     margin: 0;
   }
+
 
   .card1 {
     top: 50px;
@@ -410,12 +1063,14 @@
     left: 70px;
   }
 
+
   .card2 {
     top: 50px;
     right: 20px;
     bottom: 20px;
     left: 895px;
   }
+
 
   .card3 {
     top: 440px;
@@ -424,6 +1079,7 @@
     left: 130px;
   }
 
+
   .card4 {
     top: 350px;
     right: 20px;
@@ -431,10 +1087,249 @@
     left: 950px;
   }
 
+
   .card5 {
     top: 560px;
     right: 20px;
     bottom: 20px;
     left: 570px;
   }
-</style>
+
+        .benefitsTitle{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .benefitsTitle span {
+            color: #00aff5;
+        }
+
+        .benefitCard {
+            background-color: #ebeaff;
+            display:flex;
+            justify-content: space-around;
+            width: 80%;
+            height: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .benefitCard span {
+            font-size: 90px;
+            color: #054752;
+        }
+
+        @media (max-width: 320px) {
+
+        .textHeader {
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 10px 0px 0px 20px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px 0px 10px 20px;
+        }
+
+        .logoText {
+            float: none;
+            margin: 0 auto 20px;
+            display: block;
+            height: 70px;
+        }
+
+        .suscribe {
+            background: #0000f9;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            flex-direction: column;
+        }
+
+        .yourPhone {
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .yourPhone::placeholder {
+            text-align: center;
+        }
+
+        .textBenefits {
+            color: #ffffff;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .linkButton {
+            background: #ffffff;
+            color: #0000f0;
+            border: 1px solid #0000f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 80%;
+            height: 40px;
+            text-align: center;
+        }
+
+        .benefitsTitle {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+    }
+
+        .benefitsTitle span {
+            color: #00aff5;
+        }
+
+        .benefitsTitle h3 {
+            font-size: 15px;
+        }
+
+        .benefitCard {
+            background-color: #ebeaff;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;        
+        }
+
+        .benefitCard span {
+            font-size: 24px;
+            color: #054752;
+            text-align: center;
+        }
+
+        .benefitCard img {
+            height: 150px;
+        }
+    }
+
+        @media (max-width: 480px) {
+
+    .textHeader {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 10px 0px 0px 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 0px 10px 20px;
+    }
+
+    .logoText {
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+        height: 140px;
+    }
+
+    .suscribe {
+        background: #0000f9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .yourPhone {
+        width: 80%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .yourPhone::placeholder {
+        text-align: center;
+    }
+
+    .textBenefits {
+        color: #ffffff;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .linkButton {
+        background: #ffffff;
+        color: #0000f0;
+        border: 1px solid #0000f0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+    }
+
+    .benefitsTitle {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .benefitsTitle span {
+        color: #00aff5;
+    }
+
+    .benefitsTitle h3 {
+        font-size: 15px;
+    }
+
+    .benefitCard {
+        background-color: #ebeaff;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;        
+    }
+
+    .benefitCard span {
+        font-size: 24px;
+        color: #054752;
+        text-align: center;
+    }
+
+    .benefitCard img {
+        height: 180px;
+    }
+    }
+
+        </style>
