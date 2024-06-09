@@ -131,7 +131,7 @@ import Card from '../components/Card.astro';
                 </div>
 
                 <div class="suscribe">
-                    <p class="textBenefits">Let's go. Get a link <br>to download the app.</p>
+                    <p class="textSuscribe">Let's go. Get a link <br>to download the app.</p>
                     <input class="yourPhone" type="number" placeholder="Enter Your phone number">
                     <input class="linkButton" type="button" value="GET THE LINK">
                 </div>
@@ -572,7 +572,7 @@ import Card from '../components/Card.astro';
 		
     }
 
-    .textBenefits{
+    .textSuscribe{
         color: #ffffff;
     }
 
@@ -1112,21 +1112,39 @@ import Card from '../components/Card.astro';
         left: 500px;
     }
 
+    .yourPhone {
+        width: 380px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .linkButton{
+        background: #ffffff;
+        color: #0000f0;
+        border: 1px solid #0000f0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 180px;
+        height: 40px;
+    }
+
+    .Blue-line{
+		background-color: #261fff;
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Manrope", sans-serif;
+		padding: 13px;
+		margin-top: 80px;
+		
+	}
+
     .rectangles{
 		display: flex;
     	justify-content: space-around;
     	flex-direction: row;
 	}
 
-	.Blue-line{
-		background-color: #261fff;
-	    color: #ffffff;
-	    text-align: center;
-	    font-family: "Manrope", sans-serif;
-		padding: 13px;
-		margin-top: 80px;
-		
-	}
 	.rectangle{
 		width: 25%;
     	max-width: 600px;
@@ -1136,44 +1154,90 @@ import Card from '../components/Card.astro';
     	margin-left: auto;
     	margin-right: auto;
 	}
+
 	.rectangle p{
 		color: gray;
 	}
 }
-
 
 @media (max-width: 768px){
-	.rectangles{
-		display: flex;
-    	justify-content: space-around;
-    	flex-direction: row;
-	}
 
-	.Blue-line{
-		background-color: #261fff;
-	    color: #ffffff;
-	    text-align: center;
-	    font-family: "Manrope", sans-serif;
-		padding: 13px;
-		margin-top: 80px;
-		
-	}
-	.rectangle{
-		width: 25%;
-    	max-width: 600px;
-    	border: solid white;
-    	background-color: #fff;
-    	border-radius: 3px;
-    	margin-left: auto;
-    	margin-right: auto;
-	}
-	.rectangle p{
-		color: gray;
-	}
-}
+    .textHeader {
+        position: relative;
+        overflow: hidden;
+        background-color: #261fff;
+        color: #ffffff;
+        text-align: left;
+        padding: 80px;
+        z-index: 1;
+    }
 
-@media (max-width: 768px) {
-	.container {
+    .title {
+        font-size: 22px;
+        font-weight: 600px;
+        margin: 0;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        margin: 0;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .logoText {
+        float: right;
+        margin: -30px 30px 0px 0px;
+        width: 180px;
+    }
+
+    .circle {
+    position: absolute;
+    bottom: -20px;
+    left: -65px;
+    background-color: #f6d5da;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    }
+
+    .rectangle1 {
+        position: absolute;
+        top: 10%;
+        left: 22%;
+        transform: translateX(-50%);
+        height: 300px;
+        width: 80px;
+        border: 70px solid transparent;
+        background: linear-gradient(#6d69ff, transparent) border-box;
+        border-radius: 120px;
+        z-index: -1;
+        -webkit-mask: /*4*/
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor; /*5'*/
+        mask-composite: exclude; /*5*/
+    }
+
+    .rectangle2 {
+        position: absolute;
+        top: 50%;
+        right: -19%;
+        transform: translateY(-50%);
+        height: 80px;
+        width: 300px;
+        border: 70px solid transparent;
+        background: linear-gradient(90deg, #6d69ff, transparent) border-box;
+        border-radius: 120px;
+        z-index: -1;
+        -webkit-mask: /*4*/
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor; /*5'*/
+        mask-composite: exclude; /*5*/
+    }
+
+    .container {
 		background-color: white;
 		display: flex;
 		flex-wrap: wrap;
@@ -1184,14 +1248,14 @@ import Card from '../components/Card.astro';
 		text-align: center;
 		margin: -37px auto;
 		padding: 0px; 
-		border: 39px solid white;
+		border: 35px solid white;
 		border-radius: 13px;
 		position: relative;
 		font-family: "Manrope", sans-serif;
-		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
+		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1);
+        margin-top: -60px;
 
 	}
-
 
 	.label-origin{
 		display: block;
@@ -1204,16 +1268,19 @@ import Card from '../components/Card.astro';
 		font-size: x-small;
 		margin-top: 12px;
 	}
+
 	.label-Date{
 		display: block;
 		font-size: x-small;
 		margin-top: 12px;
 	}
+
 	.label-number{
 		display: block;
 		font-size: x-small;
 		margin-top: 12px;
 	}
+
 	.input {
 		padding: 10px 8px;
 		padding-right: 14px;
@@ -1231,6 +1298,7 @@ import Card from '../components/Card.astro';
 		margin-left: -3px;
 		
 	}
+
 	.origin,.Date,.destination,.passengers{
 		margin-top: -2vh;
 	}
@@ -1248,7 +1316,227 @@ import Card from '../components/Card.astro';
 		border: transparent; 
 		border-radius: 3px;
 		font-family: "Manrope", sans-serif;
-	}	
+	}
+
+    .cards {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        margin-top: 130px;
+    }
+
+    .principalTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 700px;
+        z-index: 3;
+        font-family: "Manrope",;
+    }   
+
+    .cardTitle{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .cardSubtitle{
+        text-align: center;
+        font-size: 13px;
+        margin-top: -5px;
+    }
+
+    .cards .bg1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        max-width: 300px;
+        max-height: 300px;
+}
+
+    .cards .bg2 {
+        position: absolute;
+        top: calc(50% + 115px);
+        left: calc(50% + 140px);
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .card {
+        position: absolute;
+        z-index: 3;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 200px;
+        height: 90px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card .icon {
+        width: 30px;
+        height: 30px;
+        margin-top: -20px;
+    }
+
+    .card .content {
+        padding: 5px;
+    }
+
+    .card .title {
+        margin-top: -10px;
+        font-size: 12px;
+    }
+
+    .card .subtitle {
+        font-size: 10px;
+        margin-top: -15px;
+    }
+
+    .card1 {
+        top: 190px;
+        right: 20px;
+        bottom: 20px;
+        left: 70px;
+    }
+
+    .card2 {
+        top: 160px;
+        right: 20px;
+        bottom: 20px;
+        left: 450px;
+    }
+
+    .card3 {
+        top: 400px;
+        right: 20px;
+        bottom: 20px;
+        left: 70px;
+    }
+
+    .card4 {
+        top: 300px;
+        right: 20px;
+        bottom: 20px;
+        left: 530px;
+    }
+
+    .card5 {
+        top: 470px;
+        right: 20px;
+        bottom: 20px;
+        left: 340px;
+    }
+
+    .suscribe{
+        background: #0000f0;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        width: 90%;
+        margin-top: -90px;
+        padding: 20px;
+    }
+
+    .yourPhone {
+        width: 280px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .linkButton{
+        background: #ffffff;
+        color: #0000f0;
+        border: 1px solid #0000f0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 130px;
+        height: 40px;
+    }
+
+    .benefitsTitle{
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 30px
+    }
+
+    .benefitsTitle h2{
+        font-size: 20px;
+    }
+
+    .benefitsTitle h3{
+        font-size: 15px;
+    }
+
+    .benefitCard {
+        background-color: #ebeaff;
+        display:flex;
+        justify-content: space-around;
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .benefitCard h2{
+        font-size: 25px;
+    }
+
+    .benefitCard h3{
+        font-size: 15px;
+    }
+
+    .benefitCard span {
+        font-size: 60px;
+        color: #054752;
+    }
+
+    .benefitCard img {
+            height: 170px;
+        }
+
+    .Blue-line{
+		background-color: #261fff;
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Manrope", sans-serif;
+		padding: 13px;
+		margin-top: 50px;
+		
+	}
+
+	.rectangles{
+		display: flex;
+    	justify-content: space-around;
+    	flex-direction: row;
+	}
+
+	.rectangle{
+		width: 25%;
+    	max-width: 600px;
+    	border: solid white;
+    	background-color: #fff;
+    	border-radius: 3px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.rectangle p{
+		color: gray;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1300,7 +1588,7 @@ import Card from '../components/Card.astro';
     text-align: center;
 }
 
-.textBenefits {
+.textSuscribe {
     color: #ffffff;
     font-size: 15px;
     margin-bottom: 10px;
@@ -1609,7 +1897,7 @@ import Card from '../components/Card.astro';
             text-align: center;
         }
 
-        .textBenefits {
+        .textSuscribe {
             color: #ffffff;
             font-size: 15px;
             margin-bottom: 10px;
