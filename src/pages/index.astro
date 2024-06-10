@@ -231,6 +231,7 @@ import Card from '../components/Card.astro';
 </html>
 
 <style>
+
     /* #region seccion estilos principal */
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
@@ -388,7 +389,7 @@ import Card from '../components/Card.astro';
         border: 39px solid white;
         border-radius: 13px;
         position: relative;
-        font-family: "Manrope", sans-serif;
+        font-family: "Manrope";
         box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); 
         z-index: 1;
     }
@@ -430,7 +431,7 @@ import Card from '../components/Card.astro';
         text-align: center;
         border: 1px solid gray; 
         border-radius: 3px;
-        font-family: "Manrope", sans-serif;
+        font-family: "Manrope";
         margin-left: -3px;
     }
 
@@ -447,7 +448,7 @@ import Card from '../components/Card.astro';
         text-align: center;
         border: transparent;
         border-radius: 3px;
-        font-family: "Manrope", sans-serif;
+        font-family: "Manrope";
     }	
 
     .cards {
@@ -466,7 +467,7 @@ import Card from '../components/Card.astro';
         align-items: center;
         margin-bottom: 900px;
         z-index: 3;
-        font-family: "Manrope",;
+        font-family: "Manrope";
     }   
 
     .cardTitle, .cardSubtitle {
@@ -569,7 +570,6 @@ import Card from '../components/Card.astro';
         width: 90%;
         margin: 70px auto;
         padding: 20px;
-		
     }
 
     .textSuscribe{
@@ -625,16 +625,16 @@ import Card from '../components/Card.astro';
     }
 
     .Blue-line{
-            background-color: #261fff;
-            color: #ffffff;
-            justify-content: center;
-            font-family: "Manrope", sans-serif;
-            margin: 80px auto;
-            width: 95%;
-            display: block;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
+        background-color: #261fff;
+        color: #ffffff;
+        justify-content: center;
+        font-family: "Manrope";
+        margin: 80px auto;
+        width: 95%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
 	}
 
     .rectangles{
@@ -676,7 +676,7 @@ import Card from '../components/Card.astro';
 		display: flex;
 		background-color: #fff;
 		color: #000;
-		font-family: "Manrope", sans-serif;
+		font-family: "Manrope";
 	}
 
     .left{
@@ -686,7 +686,7 @@ import Card from '../components/Card.astro';
 
     .footer-list{
 		list-style: none;
-		font-family: "Manrope", sans-serif;
+		font-family: "Manrope";
 		color: #000;
 		padding: 0;
 		margin-top: -19px;
@@ -709,7 +709,7 @@ import Card from '../components/Card.astro';
         border: transparent; 
         border-radius: 3px;
         margin-left:auto;
-        font-family: "Manrope", sans-serif;
+        font-family: "Manrope";
 	}
 
     .input-footer {
@@ -724,15 +724,13 @@ import Card from '../components/Card.astro';
         text-align: justify;
         border: 1px solid gray; 
         border-radius: 3px;
-        font-family: "Manrope", sans-serif;
+        font-family: "Manrope";
         margin-left: -3px;
     }
 
     /* #endregion seccion estilos principal */
 
-
     @media (max-width: 1200px) {
-
         .cards {
             position: relative;
             display: flex;
@@ -846,1010 +844,693 @@ import Card from '../components/Card.astro';
     }
 
     @media (max-width: 1024px) {
-
-    .textHeader {
-        position: relative;
-        overflow: hidden;
-        background-color: #261fff;
-        color: #ffffff;
-        text-align: left;
-        padding: 80px;
-        z-index: 1;
-    }
-
-    .title {
-        font-size: 29px;
-        font-weight: 600px;
-        margin: 0;
-        padding: 10px 0px 0px 30px;
-    }
-
-    .subtitle {
-        font-size: 20px;
-        font-weight: 500px;
-        margin: 0;
-        padding: 20px 0px 10px 30px;
-    }
-
-    .logoText {
-        float: right;
-        margin: -30px 50px 0px 0px;
-        width: 230px;
-    }
-
-    .circle {
-    position: absolute;
-    bottom: -20px;
-    left: -65px;
-    background-color: #f6d5da;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-    .rectangle1 {
-        position: absolute;
-        top: 10%;
-        left: 22%;
-        transform: translateX(-50%);
-        height: 300px;
-        width: 80px;
-        border: 70px solid transparent;
-        background: linear-gradient(#6d69ff, transparent) border-box;
-        border-radius: 120px;
-        z-index: -1;
-        -webkit-mask: /*4*/
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor; /*5'*/
-        mask-composite: exclude; /*5*/
-    }
-
-    .rectangle2 {
-        position: absolute;
-        top: 50%;
-        right: -19%;
-        transform: translateY(-50%);
-        height: 80px;
-        width: 300px;
-        border: 70px solid transparent;
-        background: linear-gradient(90deg, #6d69ff, transparent) border-box;
-        border-radius: 120px;
-        z-index: -1;
-        -webkit-mask: /*4*/
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor; /*5'*/
-        mask-composite: exclude; /*5*/
-    }
-
-	.container {
-		background-color: white;
-		display: flex;
-		flex-wrap: wrap;
-		height:  auto; 
-		width: 35vw;
-		align-items: center;
-		justify-content: space-around;
-		text-align: center;
-		margin: -60px auto;
-		padding: 0px; 
-		border: 39px solid white;
-		border-radius: 13px;
-		position: relative;
-		font-family: "Manrope", sans-serif;
-		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
-	}
-
-	.label-origin{
-		display: block;
-		font-size: x-small;
-		margin-top: 13px;
-	}
-
-	.label-destination{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-
-	.label-Date{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-
-	.label-number{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-
-	.input {
-		padding: 10px 8px;
-		padding-right: 14px;
-		display: flex;
-		margin: 10px;
-		height: 15px;
-		width: 126px;
-		margin-right: -7px;
-		background-color: #f2f2f2;
-		justify-content: center;
-		text-align: center;
-		border: 1px solid gray; 
-		border-radius: 3px;
-		font-family: "Manrope", sans-serif;
-		margin-left: -3px;
-		
-	}
-
-	.origin,.Date,.destination,.passengers{
-		margin-top: -2vh;
-	}
-
-	#search{
-		padding: 10px 8px;
-		display: flex;
-		margin: 8px;
-		height: 36px;
-		width: 129px;
-		background-color: #261fff;
-		color: #ffffff;
-		justify-content: center;
-		text-align: center;
-		border: transparent; 
-		border-radius: 3px;
-		font-family: "Manrope", sans-serif;
-	}
-
-    .cards {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 700px;
-        margin-top: 170px;
-    }
-
-    .principalTitle{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 720px;
-        z-index: 3;
-        font-family: "Manrope",;
-    }   
-
-    .cardTitle, .cardSubtitle {
-        text-align: center;
-    }
-
-    .cards .bg1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        max-width: 400px;
-        max-height: 400px;
-}
-
-    .cards .bg2 {
-        position: absolute;
-        top: calc(50% + 150px);
-        left: calc(50% + 200px);
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        max-width: 200px;
-        max-height: 200px;
-    }
-
-    .card {
-        position: absolute;
-        z-index: 3;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        width: 280px;
-        height: 100px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card .icon {
-        width: 30px;
-        height: 30px;
-        margin-top: -20px;
-    }
-
-    .card .content {
-        padding: 5px;
-    }
-
-    .card .title {
-        margin-top: -20px;
-        font-size: 16px;
-    }
-
-    .card .subtitle {
-        font-size: 11px;
-    }
-
-    .card1 {
-        top: 170px;
-        right: 20px;
-        bottom: 20px;
-        left: 100px;
-    }
-
-    .card2 {
-        top: 120px;
-        right: 20px;
-        bottom: 20px;
-        left: 610px;
-    }
-
-    .card3 {
-        top: 490px;
-        right: 20px;
-        bottom: 20px;
-        left: 70px;
-    }
-
-    .card4 {
-        top: 300px;
-        right: 20px;
-        bottom: 20px;
-        left: 710px;
-    }
-
-    .card5 {
-        top: 480px;
-        right: 20px;
-        bottom: 20px;
-        left: 500px;
-    }
-
-    .yourPhone {
-        width: 380px;
-        height: 40px;
-        border-radius: 5px;
-        border: none;
-    }
-
-    .linkButton{
-        background: #ffffff;
-        color: #0000f0;
-        border: 1px solid #0000f0;
-        padding: 10px 20px;
-        border-radius: 5px;
-        width: 180px;
-        height: 40px;
-    }
-
-    .Blue-line{
-		background-color: #261fff;
-	    color: #ffffff;
-	    text-align: center;
-	    font-family: "Manrope", sans-serif;
-		padding: 13px;
-		margin-top: 80px;
-		
-	}
-
-    .rectangles{
-		display: flex;
-    	justify-content: space-around;
-    	flex-direction: row;
-	}
-
-	.rectangle{
-		width: 25%;
-    	max-width: 600px;
-    	border: solid white;
-    	background-color: #fff;
-    	border-radius: 3px;
-    	margin-left: auto;
-    	margin-right: auto;
-	}
-
-	.rectangle p{
-		color: gray;
-	}
-}
-
-@media (max-width: 768px){
-
-    .textHeader {
-        position: relative;
-        overflow: hidden;
-        background-color: #261fff;
-        color: #ffffff;
-        text-align: left;
-        padding: 80px;
-        z-index: 1;
-    }
-
-    .title {
-        font-size: 22px;
-        font-weight: 600px;
-        margin: 0;
-        padding: 10px 0px 0px 0px;
-    }
-
-    .subtitle {
-        font-size: 15px;
-        margin: 0;
-        padding: 20px 0px 10px 0px;
-    }
-
-    .logoText {
-        float: right;
-        margin: -30px 30px 0px 0px;
-        width: 180px;
-    }
-
-    .circle {
-    position: absolute;
-    bottom: -20px;
-    left: -65px;
-    background-color: #f6d5da;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    }
-
-    .rectangle1 {
-        position: absolute;
-        top: 10%;
-        left: 22%;
-        transform: translateX(-50%);
-        height: 300px;
-        width: 80px;
-        border: 70px solid transparent;
-        background: linear-gradient(#6d69ff, transparent) border-box;
-        border-radius: 120px;
-        z-index: -1;
-        -webkit-mask: /*4*/
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor; /*5'*/
-        mask-composite: exclude; /*5*/
-    }
-
-    .rectangle2 {
-        position: absolute;
-        top: 50%;
-        right: -19%;
-        transform: translateY(-50%);
-        height: 80px;
-        width: 300px;
-        border: 70px solid transparent;
-        background: linear-gradient(90deg, #6d69ff, transparent) border-box;
-        border-radius: 120px;
-        z-index: -1;
-        -webkit-mask: /*4*/
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor; /*5'*/
-        mask-composite: exclude; /*5*/
-    }
-
-    .container {
-		background-color: white;
-		display: flex;
-		flex-wrap: wrap;
-		height:  auto; 
-		width: 50vw;
-		align-items: center;
-		justify-content: space-around;
-		text-align: center;
-		margin: -37px auto;
-		padding: 0px; 
-		border: 35px solid white;
-		border-radius: 13px;
-		position: relative;
-		font-family: "Manrope", sans-serif;
-		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1);
-        margin-top: -60px;
-
-	}
-
-	.label-origin{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-
-	.label-destination{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-
-	.label-Date{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-
-	.label-number{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-
-	.input {
-		padding: 10px 8px;
-		padding-right: 14px;
-		display: flex;
-		margin: 10px;
-		height: 15px;
-		width: 126px;
-		margin-right: -7px;
-		background-color: #f2f2f2;
-		justify-content: center;
-		text-align: center;
-		border: 1px solid gray; 
-		border-radius: 3px;
-		font-family: "Manrope", sans-serif;
-		margin-left: -3px;
-		
-	}
-
-	.origin,.Date,.destination,.passengers{
-		margin-top: -2vh;
-	}
-
-	#search{
-		padding: 10px 8px;
-		display: flex;
-		margin: 8px;
-		height: 36px;
-		width: 129px;
-		background-color: #261fff;
-		color: #ffffff;
-		justify-content: center;
-		text-align: center;
-		border: transparent; 
-		border-radius: 3px;
-		font-family: "Manrope", sans-serif;
-	}
-
-    .cards {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 700px;
-        margin-top: 130px;
-    }
-
-    .principalTitle{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 700px;
-        z-index: 3;
-        font-family: "Manrope",;
-    }   
-
-    .cardTitle{
-        text-align: center;
-        font-size: 22px;
-    }
-
-    .cardSubtitle{
-        text-align: center;
-        font-size: 13px;
-        margin-top: -5px;
-    }
-
-    .cards .bg1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        max-width: 300px;
-        max-height: 300px;
-}
-
-    .cards .bg2 {
-        position: absolute;
-        top: calc(50% + 115px);
-        left: calc(50% + 140px);
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        max-width: 150px;
-        max-height: 150px;
-    }
-
-    .card {
-        position: absolute;
-        z-index: 3;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        width: 200px;
-        height: 90px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card .icon {
-        width: 30px;
-        height: 30px;
-        margin-top: -20px;
-    }
-
-    .card .content {
-        padding: 5px;
-    }
-
-    .card .title {
-        margin-top: -10px;
-        font-size: 12px;
-    }
-
-    .card .subtitle {
-        font-size: 10px;
-        margin-top: -15px;
-    }
-
-    .card1 {
-        top: 190px;
-        right: 20px;
-        bottom: 20px;
-        left: 70px;
-    }
-
-    .card2 {
-        top: 160px;
-        right: 20px;
-        bottom: 20px;
-        left: 450px;
-    }
-
-    .card3 {
-        top: 400px;
-        right: 20px;
-        bottom: 20px;
-        left: 70px;
-    }
-
-    .card4 {
-        top: 300px;
-        right: 20px;
-        bottom: 20px;
-        left: 530px;
-    }
-
-    .card5 {
-        top: 470px;
-        right: 20px;
-        bottom: 20px;
-        left: 340px;
-    }
-
-    .suscribe{
-        background: #0000f0;
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 10px;
-        width: 90%;
-        margin-top: -90px;
-        padding: 20px;
-    }
-
-    .yourPhone {
-        width: 280px;
-        height: 40px;
-        border-radius: 5px;
-        border: none;
-    }
-
-    .linkButton{
-        background: #ffffff;
-        color: #0000f0;
-        border: 1px solid #0000f0;
-        padding: 10px 20px;
-        border-radius: 5px;
-        width: 130px;
-        height: 40px;
-    }
-
-    .benefitsTitle{
-        text-align: center;
-        margin-top: -20px;
-        margin-bottom: 30px
-    }
-
-    .benefitsTitle h2{
-        font-size: 20px;
-    }
-
-    .benefitsTitle h3{
-        font-size: 15px;
-    }
-
-    .benefitCard {
-        background-color: #ebeaff;
-        display:flex;
-        justify-content: space-around;
-        width: 80%;
-        height: 300px;
-        margin: 0 auto;
-        padding: 20px;
-        border-radius: 10px;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .benefitCard h2{
-        font-size: 25px;
-    }
-
-    .benefitCard h3{
-        font-size: 15px;
-    }
-
-    .benefitCard span {
-        font-size: 60px;
-        color: #054752;
-    }
-
-    .benefitCard img {
-            height: 170px;
+            .textHeader {
+            position: relative;
+            overflow: hidden;
+            background-color: #261fff;
+            color: #ffffff;
+            text-align: left;
+            padding: 80px;
+            z-index: 1;
         }
 
-    .Blue-line{
-		background-color: #261fff;
-	    color: #ffffff;
-	    text-align: center;
-	    font-family: "Manrope", sans-serif;
-		padding: 13px;
-		margin-top: 50px;
-		
-	}
+        .title {
+            font-size: 29px;
+            font-weight: 600px;
+            margin: 0;
+            padding: 10px 0px 0px 30px;
+        }
 
-	.rectangles{
-		display: flex;
-    	justify-content: space-around;
-    	flex-direction: row;
-	}
+        .subtitle {
+            font-size: 20px;
+            font-weight: 500px;
+            margin: 0;
+            padding: 20px 0px 10px 30px;
+        }
 
-	.rectangle{
-		width: 25%;
-    	max-width: 600px;
-    	border: solid white;
-    	background-color: #fff;
-    	border-radius: 3px;
-    	margin-left: auto;
-    	margin-right: auto;
-	}
+        .logoText {
+            float: right;
+            margin: -30px 50px 0px 0px;
+            width: 230px;
+        }
 
-	.rectangle p{
-		color: gray;
-	}
-}
+        .circle {
+            position: absolute;
+            bottom: -20px;
+            left: -65px;
+            background-color: #f6d5da;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
 
-@media (max-width: 480px) {
+        .rectangle1 {
+            position: absolute;
+            top: 10%;
+            left: 22%;
+            transform: translateX(-50%);
+            height: 300px;
+            width: 80px;
+            border: 70px solid transparent;
+            background: linear-gradient(#6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
 
-.textHeader {
-    padding: 20px;
-}
+        .rectangle2 {
+            position: absolute;
+            top: 50%;
+            right: -19%;
+            transform: translateY(-50%);
+            height: 80px;
+            width: 300px;
+            border: 70px solid transparent;
+            background: linear-gradient(90deg, #6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
 
-.title {
-    font-size: 24px;
-    font-weight: 600;
-    padding: 10px 0px 0px 20px;
-}
+        .container {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            height:  auto; 
+            width: 35vw;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin: -60px auto;
+            padding: 0px; 
+            border: 39px solid white;
+            border-radius: 13px;
+            position: relative;
+            font-family: "Manrope";
+            box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1);
+        }
 
-.subtitle {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 0px 10px 20px;
-}
+        .label-origin{
+            display: block;
+            font-size: x-small;
+            margin-top: 13px;
+        }
 
-.logoText {
-    float: none;
-    margin: 0 auto 20px;
-    display: block;
-    height: 140px;
-}
+        .label-destination{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
 
-.suscribe {
-    background: #0000f9;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    flex-direction: column;
-}
+        .label-Date{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
 
-.yourPhone {
-    width: 80%;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-}
+        .label-number{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
 
-.yourPhone::placeholder {
-    text-align: center;
-}
+        .input {
+            padding: 10px 8px;
+            padding-right: 14px;
+            display: flex;
+            margin: 10px;
+            height: 15px;
+            width: 126px;
+            margin-right: -7px;
+            background-color: #f2f2f2;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid gray; 
+            border-radius: 3px;
+            font-family: "Manrope";
+            margin-left: -3px;
+        }
 
-.textSuscribe {
-    color: #ffffff;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
+        .origin,.Date,.destination,.passengers{
+            margin-top: -2vh;
+        }
 
-.linkButton {
-    background: #ffffff;
-    color: #0000f0;
-    border: 1px solid #0000f0;
-    padding: 10px 20px;
-    border-radius: 5px;
-    width: 50%;
-    height: 40px;
-    text-align: center;
-}
+        #search{
+            padding: 10px 8px;
+            display: flex;
+            margin: 8px;
+            height: 36px;
+            width: 129px;
+            background-color: #261fff;
+            color: #ffffff;
+            justify-content: center;
+            text-align: center;
+            border: transparent; 
+            border-radius: 3px;
+            font-family: "Manrope";
+        }
 
-.benefitsTitle {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+        .cards {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin-top: 170px;
+        }
 
-.benefitsTitle span {
-    color: #00aff5;
-}
+        .principalTitle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 720px;
+            z-index: 3;
+            font-family: "Manrope";
+        }   
 
-.benefitsTitle h3 {
-    font-size: 15px;
-}
+        .cardTitle, .cardSubtitle {
+            text-align: center;
+        }
 
-.benefitCard {
-    background-color: #ebeaff;
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;        
-}
+        .cards .bg1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            max-width: 400px;
+            max-height: 400px;
+        }
 
-.benefitCard span {
-    font-size: 24px;
-    color: #054752;
-    text-align: center;
-}
+        .cards .bg2 {
+            position: absolute;
+            top: calc(50% + 150px);
+            left: calc(50% + 200px);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            max-width: 200px;
+            max-height: 200px;
+        }
 
-.benefitCard img {
-    height: 180px;
-}
-}
+        .card {
+            position: absolute;
+            z-index: 3;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            width: 280px;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
 
-@media (max-width: 425px){
-	.rectangles{
-		display: flex;
-    	justify-content: space-around;
-    	flex-direction: column;
-	}
+        .card .icon {
+            width: 30px;
+            height: 30px;
+            margin-top: -20px;
+        }
 
-	.Blue-line{
-		background-color: #261fff;
-	    color: #ffffff;
-	    text-align: center;
-	    font-family: "Manrope", sans-serif;
-		padding: 13px;
-		margin-top: 80px;
-		
-	}
-	.rectangle{
-		width: 68%;  
-    	max-width: 600px;
-		border: solid white;
-		background-color: #fff	;
-		border-radius: 3px;
-		margin-left: auto;
-    	margin-right: auto;
-		margin-bottom: 15px;
-	}
-	.rectangle p{
-		color: gray;
-	}
-}
+        .card .content {
+            padding: 5px;
+        }
 
-@media (max-width: 425px){
+        .card .title {
+            margin-top: -20px;
+            font-size: 16px;
+        }
 
-	.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-	flex-direction: column;
-	flex: 1
+        .card .subtitle {
+            font-size: 11px;
+        }
 
-}
-	footer {
-		width: 100%;
-		bottom: 0;
-		background-color: #261fff; 
-		color: #ffffff; 
-	}
-	.second-part{
-		display: flex;
-    	background-color: #fff;
-    	color: #000;
-    	font-family: "Manrope", sans-serif;
-    	flex-direction: column;
-	}
+        .card1 {
+            top: 170px;
+            right: 20px;
+            bottom: 20px;
+            left: 100px;
+        }
 
-	.left{
-		margin-left:auto;
-		list-style: none;
-		margin-right: auto;
-	}
-	
-	.footer-list{
-		list-style: none;
-		font-family: "Manrope", sans-serif;
-		color: #000;
-		padding: 0;
-		margin-top: -19px;
-	}
-	.right{
-		margin-inline-start: auto;	
-    	margin-right: auto;
-	}
-	.right button{
-	padding: 10px 8px;
-    display: flex;
-    margin: 8px;
-    height: 36px;
-    width: 80vw;
-    background-color: #261fff;
-	color: #ffffff;
-    justify-content: center;
-    border: transparent; 
-    border-radius: 3px;
-	margin-left:auto;
-	font-family: "Manrope", sans-serif;
-	}
-	.input-footer {
-    padding: 10px 8px;
-	padding-right: 14px;
-    display: flex;
-    margin: 8px;
-    height: 2vh;
-    width: 80vw;
-    margin-right: auto;
-    background-color: #f2f2f2;
-    text-align: justify;
-    border: 1px solid gray; 
-    border-radius: 3px;
-	font-family: "Manrope", sans-serif;
-    margin-left: auto;
-	}
-}
+        .card2 {
+            top: 120px;
+            right: 20px;
+            bottom: 20px;
+            left: 610px;
+        }
 
-@media (max-width: 425px) {
-	.container {
-		background-color: white;
-		display: flex;
-		flex-wrap: wrap;
-		height:  78vh; 
-		width: 65vw;
-		align-items: center;
-		justify-content: space-around;
-		text-align: center;
-		margin: -37px auto;
-		padding: 0px; 
-		border: 39px solid white;
-		border-radius: 13px;
-		position: relative;
-		font-family: "Manrope", sans-serif;
-		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
+        .card3 {
+            top: 490px;
+            right: 20px;
+            bottom: 20px;
+            left: 70px;
+        }
 
-	}
+        .card4 {
+            top: 300px;
+            right: 20px;
+            bottom: 20px;
+            left: 710px;
+        }
 
+        .card5 {
+            top: 480px;
+            right: 20px;
+            bottom: 20px;
+            left: 500px;
+        }
 
-	.label-origin{
-		display: block;
-		font-size: x-small;
-		margin-top: -12px;
-	}
+        .yourPhone {
+            width: 380px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+        }
 
-	.label-destination{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-	.label-Date{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-	.label-number{
-		display: block;
-		font-size: x-small;
-		margin-top: 12px;
-	}
-	.input {
-		padding: 10px 8px;
-		padding-right: 14px;
-		display: flex;
-		margin: 10px;
-		height: 15px;
-		width: 126px;
-		margin-right: -7px;
-		background-color: #f2f2f2;
-		justify-content: center;
-		text-align: center;
-		border: 1px solid gray; 
-		border-radius: 3px;
-		font-family: "Manrope", sans-serif;
-		margin-left: -3px;
-		
-	}
-	.origin,.Date,.destination,.passengers{
-		margin-top: -2vh;
-	}
+        .linkButton{
+            background: #ffffff;
+            color: #0000f0;
+            border: 1px solid #0000f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 180px;
+            height: 40px;
+        }
 
-	#search{
-		padding: 10px 8px;
-		display: flex;
-		margin: 8px;
-		height: 36px;
-		width: 129px;
-		background-color: #261fff;
-		color: #ffffff;
-		justify-content: center;
-		text-align: center;
-		border: transparent; 
-		border-radius: 3px;
-		font-family: "Manrope", sans-serif;
-	}	
-}
+        .Blue-line{
+            background-color: #261fff;
+            color: #ffffff;
+            text-align: center;
+            font-family: "Manrope";
+        padding: 13px;
+        margin-top: 80px;
+        }
 
-@media (max-width: 320px) {
-	.container {
-		background-color: white;
-		display: flex;
-		flex-wrap: wrap;
-		height:  auto; 
-		width: 45vw;
-		align-items: center;
-		justify-content: space-around;
-		text-align: center;
-		margin: -37px auto;
-		padding: 0px; 
-		border: 39px solid white;
-		border-radius: 13px;
-		position: relative;
-		font-family: "Manrope", sans-serif;
-		box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1); /* Agrega la sombra abajo */
+        .rectangles{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
 
-	}
-}
+        .rectangle{
+            width: 25%;
+            max-width: 600px;
+            border: solid white;
+            background-color: #fff;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-        @media (max-width: 320px) {
+        .rectangle p{
+            color: gray;
+        }
+    }
 
+    @media (max-width: 768px){
+        .textHeader {
+            position: relative;
+            overflow: hidden;
+            background-color: #261fff;
+            color: #ffffff;
+            text-align: left;
+            padding: 80px;
+            z-index: 1;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 600px;
+            margin: 0;
+            padding: 10px 0px 0px 0px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            margin: 0;
+            padding: 20px 0px 10px 0px;
+        }
+
+        .logoText {
+            float: right;
+            margin: -30px 30px 0px 0px;
+            width: 180px;
+        }
+
+        .circle {
+            position: absolute;
+            bottom: -20px;
+            left: -65px;
+            background-color: #f6d5da;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .rectangle1 {
+            position: absolute;
+            top: 10%;
+            left: 22%;
+            transform: translateX(-50%);
+            height: 300px;
+            width: 80px;
+            border: 70px solid transparent;
+            background: linear-gradient(#6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
+
+        .rectangle2 {
+            position: absolute;
+            top: 50%;
+            right: -19%;
+            transform: translateY(-50%);
+            height: 80px;
+            width: 300px;
+            border: 70px solid transparent;
+            background: linear-gradient(90deg, #6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
+
+        .container {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            height:  auto; 
+            width: 50vw;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin: -37px auto;
+            padding: 0px; 
+            border: 35px solid white;
+            border-radius: 13px;
+            position: relative;
+            font-family: "Manrope";
+            box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1);
+            margin-top: -60px;
+        }
+
+        .label-origin{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
+
+        .label-destination{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
+
+        .label-Date{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
+
+        .label-number{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
+
+        .input {
+            padding: 10px 8px;
+            padding-right: 14px;
+            display: flex;
+            margin: 10px;
+            height: 15px;
+            width: 126px;
+            margin-right: -7px;
+            background-color: #f2f2f2;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid gray; 
+            border-radius: 3px;
+            font-family: "Manrope";
+            margin-left: -3px;
+        }
+
+        .origin,.Date,.destination,.passengers{
+            margin-top: -2vh;
+        }
+
+        #search{
+            padding: 10px 8px;
+            display: flex;
+            margin: 8px;
+            height: 36px;
+            width: 129px;
+            background-color: #261fff;
+            color: #ffffff;
+            justify-content: center;
+            text-align: center;
+            border: transparent; 
+            border-radius: 3px;
+            font-family: "Manrope";
+        }
+
+        .cards {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin-top: 130px;
+    }
+
+        .principalTitle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 700px;
+            z-index: 3;
+            font-family: "Manrope";
+        }   
+
+        .cardTitle{
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .cardSubtitle{
+            text-align: center;
+            font-size: 13px;
+            margin-top: -5px;
+        }
+
+        .cards .bg1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        .cards .bg2 {
+            position: absolute;
+            top: calc(50% + 115px);
+            left: calc(50% + 140px);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .card {
+            position: absolute;
+            z-index: 3;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            width: 200px;
+            height: 90px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card .icon {
+            width: 30px;
+            height: 30px;
+            margin-top: -20px;
+        }
+
+        .card .content {
+            padding: 5px;
+        }
+
+        .card .title {
+            margin-top: -10px;
+            font-size: 12px;
+        }
+
+        .card .subtitle {
+            font-size: 10px;
+            margin-top: -15px;
+        }
+
+        .card1 {
+            top: 190px;
+            right: 20px;
+            bottom: 20px;
+            left: 70px;
+        }
+
+        .card2 {
+            top: 160px;
+            right: 20px;
+            bottom: 20px;
+            left: 450px;
+        }
+
+        .card3 {
+            top: 400px;
+            right: 20px;
+            bottom: 20px;
+            left: 70px;
+        }
+
+        .card4 {
+            top: 300px;
+            right: 20px;
+            bottom: 20px;
+            left: 530px;
+        }
+
+        .card5 {
+            top: 470px;
+            right: 20px;
+            bottom: 20px;
+            left: 340px;
+        }
+
+        .suscribe{
+            background: #0000f0;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 90%;
+            margin-top: -90px;
+            padding: 20px;
+        }
+
+        .yourPhone {
+            width: 280px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .linkButton{
+            background: #ffffff;
+            color: #0000f0;
+            border: 1px solid #0000f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 130px;
+            height: 40px;
+        }
+
+        .benefitsTitle{
+            text-align: center;
+            margin-top: -20px;
+            margin-bottom: 30px
+        }
+
+        .benefitsTitle h2{
+            font-size: 20px;
+        }
+
+        .benefitsTitle h3{
+            font-size: 15px;
+        }
+
+        .benefitCard {
+            background-color: #ebeaff;
+            display:flex;
+            justify-content: space-around;
+            width: 80%;
+            height: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .benefitCard h2{
+            font-size: 25px;
+        }
+
+        .benefitCard h3{
+            font-size: 15px;
+        }
+
+        .benefitCard span {
+            font-size: 60px;
+            color: #054752;
+        }
+
+        .benefitCard img {
+                height: 170px;
+        }
+
+        .Blue-line{
+            background-color: #261fff;
+            color: #ffffff;
+            text-align: center;
+            font-family: "Manrope";
+            padding: 13px;
+            margin-top: 50px;
+        }
+
+        .rectangles{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .rectangle{
+            width: 25%;
+            max-width: 600px;
+            border: solid white;
+            background-color: #fff;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .rectangle p{
+            color: gray;
+        }
+    }
+
+    @media (max-width: 425px) {
         .textHeader {
             padding: 20px;
         }
@@ -1870,31 +1551,269 @@ import Card from '../components/Card.astro';
             float: none;
             margin: 0 auto 20px;
             display: block;
+            height: 140px;
+        }
+
+        .circle {
+            position: absolute;
+            bottom: -20px;
+            left: -65px;
+            background-color: #f6d5da;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .rectangle1 {
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            transform: translateX(-50%);
+            height: 200px;
+            width: 40px;
+            border: 70px solid transparent;
+            background: linear-gradient(#6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
+
+        .rectangle2 {
+            position: absolute;
+            top: 40%;
+            right: -70%;
+            transform: translateY(-50%);
+            height: 130px;
+            width: 300px;
+            border: 70px solid transparent;
+            background: linear-gradient(90deg, #6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
+
+        .container {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            height:  78vh; 
+            width: 65vw;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin: -20px auto;
+            padding: 0px; 
+            border: 39px solid white;
+            border-radius: 13px;
+            position: relative;
+            font-family: "Manrope";
+        box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .label-origin{
+            display: block;
+            font-size: x-small;
+            margin-top: -12px;
+        }
+
+        .label-destination{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
+
+        .label-Date{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
+
+        .label-number{
+            display: block;
+            font-size: x-small;
+            margin-top: 12px;
+        }
+
+        .input {
+            padding: 10px 8px;
+            padding-right: 14px;
+            display: flex;
+            margin: 10px;
+            height: 15px;
+            width: 126px;
+            margin-right: -7px;
+            background-color: #f2f2f2;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid gray; 
+            border-radius: 3px;
+            font-family: "Manrope";
+        margin-left: -3px;
+        }
+
+        .origin,.Date,.destination,.passengers{
+            margin-top: -2vh;
+        }
+
+        #search{
+            padding: 10px 8px;
+            display: flex;
+            margin: 8px;
+            height: 36px;
+            width: 129px;
+            background-color: #261fff;
+            color: #ffffff;
+            justify-content: center;
+            text-align: center;
+            border: transparent; 
+            border-radius: 3px;
+            font-family: "Manrope";
+        }
+
+        .cards {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin-top: -60px;
+        }
+
+        .principalTitle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 450px;
+            z-index: 3;
+            font-family: "Manrope";
+        }   
+
+        .cardTitle{
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .cardSubtitle{
+            text-align: center;
+            font-size: 10px;
+            margin-top: -5px;
+        }
+
+        .cards .bg1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            max-width: 240px;
+            max-height: 240px;
+        }
+
+        .cards .bg2 {   
+            position: absolute;
+            top: calc(50% + 85px);
+            left: calc(50% + 100px);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            max-width: 110px;
+            max-height: 110px;
+        }
+
+        .card { 
+            position: absolute;
+            z-index: 3;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            width: 145px;
             height: 70px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card .icon {
+            width: 20px;
+            height: 20px;
+            margin-top: -15px;
+        }
+
+        .card .content {
+            padding: 5px;
+        }
+
+        .card .title {
+            margin-top: -10px;
+            font-size: 9px;
+        }
+
+        .card .subtitle {
+            font-size: 7px;
+            margin-top: -8px;
+        }
+
+        .card1 {
+            top: 210px;
+            right: 20px;
+            bottom: 20px;
+            left: 10px;
+        }
+
+        .card2 {
+            top: 200px;
+            right: 20px;
+            bottom: 20px;
+            left: 220px;
+        }
+
+        .card3 {
+            top: 430px;
+            right: 20px;
+            bottom: 20px;
+            left: 5px;
+        }
+
+        .card4 {
+            top: 300px;
+            right: 20px;
+            bottom: 20px;
+            left: 250px;
+        }
+
+        .card5 {
+            top: 420px;
+            right: 20px;
+            bottom: 20px;
+            left: 190px;
         }
 
         .suscribe {
-            background: #0000f9;
+            background: #0000f0;
             display: flex;
             justify-content: space-around;
             align-items: center;
             border-radius: 10px;
             width: 90%;
-            margin: 0 auto;
+            margin-top: -150px;
             padding: 10px;
             flex-direction: column;
         }
 
         .yourPhone {
-            width: 90%;
+            width: 80%;
             height: 40px;
             border-radius: 5px;
             border: none;
             margin-bottom: 10px;
-        }
-
-        .yourPhone::placeholder {
-            text-align: center;
         }
 
         .textSuscribe {
@@ -1909,7 +1828,7 @@ import Card from '../components/Card.astro';
             border: 1px solid #0000f0;
             padding: 10px 20px;
             border-radius: 5px;
-            width: 80%;
+            width: 50%;
             height: 40px;
             text-align: center;
         }
@@ -1917,8 +1836,9 @@ import Card from '../components/Card.astro';
         .benefitsTitle {
             text-align: center;
             font-size: 16px;
-            margin-bottom: 10px;
-    }
+            margin-top: -40px;
+            margin-bottom: 40px;
+        }
 
         .benefitsTitle span {
             color: #00aff5;
@@ -1943,16 +1863,449 @@ import Card from '../components/Card.astro';
         }
 
         .benefitCard span {
+            font-size: 30px;
+            color: #054752;
+            text-align: center;
+        }
+
+        .benefitCard h2{
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .benefitCard h3{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .benefitCard img {
+            height: 180px;
+            margin: 20px auto;
+        }
+
+        .Blue-line{
+            background-color: #261fff;
+            color: #ffffff;
+            text-align: center;
+            font-family: "Manrope";
+            padding: 13px;
+            margin-top: 40px;
+        }
+
+        .rectangles{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .rectangle{
+            width: 68%;  
+            max-width: 600px;
+            border: solid white;
+            background-color: #fff	;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+
+        .rectangle p{
+            color: gray;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            flex-direction: column;
+            flex: 1
+        }
+
+        footer {
+            width: 100%;
+            bottom: 0;
+            background-color: #261fff; 
+            color: #ffffff; 
+            margin-top: -70px;
+        }
+
+        .second-part{
+            display: flex;
+            background-color: #fff;
+            color: #000;
+            font-family: "Manrope";
+            flex-direction: column;
+        }
+
+        .left{
+            margin-left:auto;
+            list-style: none;
+            margin-right: auto;
+        }
+
+        .footer-list{
+            list-style: none;
+            font-family: "Manrope", sans-serif;
+            color: #000;
+            padding: 0;
+            margin-top: -19px
+        }
+
+        .right{
+            margin-inline-start: auto;	
+            margin-right: auto;
+        }
+
+        .right button{
+            padding: 10px 8px;
+            display: flex;
+            margin: 8px;
+            height: 36px;
+            width: 80vw;
+            background-color: #261fff;
+            color: #ffffff;
+            justify-content: center;
+            border: transparent; 
+            border-radius: 3px;
+            margin-left:auto;
+            font-family: "Manrope";
+        }
+
+        .input-footer {
+            padding: 10px 8px;
+            padding-right: 14px;
+            display: flex;
+            margin: 8px;
+            height: 2vh;
+            width: 80vw;
+            margin-right: auto;
+            background-color: #f2f2f2;
+            text-align: justify;
+            border: 1px solid gray; 
+            border-radius: 3px;
+            font-family: "Manrope";
+            margin-left: auto;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .textHeader {
+            padding: 30px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 0px 0px 20px;
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            padding: 10px 0px 10px 20px;
+            text-align: center;
+        }
+
+        .logoText {
+            float: none;
+            margin: 0 auto 20px;
+            display: block;
+            height: 70px;
+        }
+
+        .circle {
+            position: absolute;
+            bottom: 160px;
+            left: -65px;
+            background-color: #f6d5da;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .rectangle1 {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translateX(-50%);
+            height: 200px;
+            width: 30px;
+            border: 70px solid transparent;
+            background: linear-gradient(#6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
+
+        .rectangle2 {
+            position: absolute;
+            top: 40%;
+            right: -110%;
+            transform: translateY(-50%);
+            height: 130px;
+            width: 290px;
+            border: 70px solid transparent;
+            background: linear-gradient(90deg, #6d69ff, transparent) border-box;
+            border-radius: 120px;
+            z-index: -1;
+            -webkit-mask: /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+        }
+
+        .container {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            height:  auto; 
+            width: 45vw;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: -30px;
+            padding: 0px; 
+            border: 39px solid white;
+            border-radius: 13px;
+            position: relative;
+            font-family: "Manrope";
+            box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cards {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin-top: -120px;
+        }
+
+        .principalTitle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 340px;
+            z-index: 3;
+            font-family: "Manrope";
+        }   
+
+        .cardTitle{
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .cardSubtitle{
+            text-align: center;
+            font-size: 8px;
+            margin-top: -5px;
+        }
+
+        .cards .bg1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .cards .bg2 {   
+            position: absolute;
+            top: calc(50% + 77px);
+            left: calc(50% + 95px);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .card { 
+            position: absolute;
+            z-index: 3;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            width: 120px;
+            height: 55px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card .icon {
+            width: 15px;
+            height: 15px;
+            margin-top: -10px;
+        }
+
+        .card .content {
+            padding: 3px;
+        }
+
+        .card .title {
+            font-size: 7px;
+        }
+
+        .card .subtitle {
+            font-size: 6px;
+            margin-top: -8px;
+        }
+
+        .card1 {
+            top: 240px;
+            right: 20px;
+            bottom: 20px;
+            left: 3px;
+        }
+
+        .card2 {
+            top: 230px;
+            right: 20px;
+            bottom: 20px;
+            left: 160px;
+        }
+
+        .card3 {
+            top: 400px;
+            right: 20px;
+            bottom: 20px;
+            left: 6px;
+        }
+
+        .card4 {
+            top: 320px;
+            right: 20px;
+            bottom: 20px;
+            left: 150px;
+        }
+
+        .card5 {
+            top: 410px;
+            right: 20px;
+            bottom: 20px;
+            left: 160px;
+        }
+
+        .suscribe {
+            background: #0000f9;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 80%;
+            margin-top: -180px;
+            padding: 10px;
+            flex-direction: column;
+        }
+
+        .yourPhone {
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .textSuscribe {
+            color: #ffffff;
+            font-size: 15px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .linkButton {
+            background: #ffffff;
+            color: #0000f0;
+            border: 1px solid #0000f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 70%;
+            height: 40px;
+            text-align: center;
+        }
+
+        .benefitsTitle {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .benefitsTitle span {
+            color: #00aff5;
+        }
+
+        .benefitsTitle h2 {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .benefitsTitle h3 {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .benefitCard {
+            background-color: #ebeaff;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;        
+        }
+
+        .benefitCard span {
             font-size: 24px;
             color: #054752;
             text-align: center;
         }
 
         .benefitCard img {
-            height: 150px;
+            height: 140px;
+        }
+
+        .Blue-line{
+            background-color: #261fff;
+            color: #ffffff;
+            text-align: center;
+            font-family: "Manrope";
+            padding: 13px;
+            margin-top: 40px;
+            font-size: 13px;
+            width: 90%;
+        }
+
+        .rectangles{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .rectangle{
+            width: 60%;  
+            max-width: 500px;
+            border: solid white;
+            background-color: #fff	;
+            border-radius: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            font-size: 12px;
         }
     }
-
-        
 
 </style>
