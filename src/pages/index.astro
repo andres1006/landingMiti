@@ -635,6 +635,7 @@ import Card from '../components/Card.astro';
         align-items: center;
         text-align: center;
         padding: 20px;
+        margin-top: 5px;
 	}
 
     .rectangles{
@@ -1130,8 +1131,8 @@ import Card from '../components/Card.astro';
             color: #ffffff;
             text-align: center;
             font-family: "Manrope";
-        padding: 13px;
-        margin-top: 80px;
+            padding: 13px;
+            margin-top: 20px;
         }
 
         .rectangles{
@@ -1506,7 +1507,7 @@ import Card from '../components/Card.astro';
             text-align: center;
             font-family: "Manrope";
             padding: 13px;
-            margin-top: 50px;
+            margin-top: 20px;
         }
 
         .rectangles{
@@ -1604,8 +1605,8 @@ import Card from '../components/Card.astro';
             background-color: white;
             display: flex;
             flex-wrap: wrap;
-            height:  78vh; 
-            width: 65vw;
+            height:  auto; 
+            width: 45vw;
             align-items: center;
             justify-content: space-around;
             text-align: center;
@@ -1889,7 +1890,7 @@ import Card from '../components/Card.astro';
             text-align: center;
             font-family: "Manrope";
             padding: 13px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .rectangles{
@@ -1988,7 +1989,20 @@ import Card from '../components/Card.astro';
             margin-left: auto;
         }
     }
+    @media (max-width: 650px){
+        .suscribe{
+            background: #0000f0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 68%;
+            margin-top: -90px;
+            padding: 20px;
+            flex-direction: column;
+        }
 
+    }
     @media (max-width: 320px) {
         .textHeader {
             padding: 30px;
@@ -2287,6 +2301,7 @@ import Card from '../components/Card.astro';
             margin-top: 40px;
             font-size: 13px;
             width: 90%;
+            margin-top: 2px;
         }
 
         .rectangles{
